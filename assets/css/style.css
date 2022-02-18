@@ -1,0 +1,60 @@
+/* Global Style */
+body {
+  background-color: white;
+  font-family: 'Germania One', sans-serif;
+  text-align: center;
+}
+
+/* Heading */
+header {
+  background-color: #8A2F24;
+  color: #FFFFFF;
+}
+
+/* Game Section */
+.game-section {
+  background-color: #EBD2B6;
+}
+
+.used-skills {
+  display: inline-block;
+}
+
+#hidden {
+  visibility: hidden;
+}
+
+/* Animation */
+.anima-section {
+  margin-top: 1%;
+  height: 300px;
+  background-color: #e1ebb6;
+}
+
+/* Buttons */
+.btn {
+  margin: 1%;
+  padding: 0.5%;
+}
+
+.btn--start{
+  letter-spacing: 1.2px;
+  font-size: 300%;
+}
+
+.btn--big, .vs{
+  width: 225px;
+  height: 225px;
+}
+
+.btn--big {
+  border-radius: 50%;
+  border: 10px solid #8A2F24;
+}
+
+/* Score Section */
+.score-section {
+  top
+  background-color: #8A2F24;
+  color: #FFFFFF;  
+}

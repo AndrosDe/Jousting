@@ -10,6 +10,7 @@
 
 <!-- font awesome and google fonts -->
 <script src="https://kit.fontawesome.com/5bf0c6b681.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
 
 
 <link rel="stylesheet" href="assets/css/style.css">
@@ -23,37 +24,41 @@
 
   <!-- Main Game section-->
   <section class="game-section">
-    <h2>Choose your skill against your opponent:</h2>
+    <h2>Choose your skill against your opponent!</h2>
     <!-- Start Game Button-->
     <div id="game-starter"> 
-      <button data-type="start" class="btn">
+      <button data-type="start" class="btn btn--start">
         Start
       </button>
     </div>
     <div>
+      <!-- Used Skills -->
+      <!-- Your selected Skill-->
+      <div class="used-skills">
+        <h3> You </h3>
+        <div class="btn--big player-skill">
+
+        </div>
+      </div>
+      <div class="used-skills">
+        <h3 id="hidden"> VS </h3>
+        <div class="vs">
+
+        </div>
+      </div>
+      <!-- Computer selected skill-->
+      <div class="used-skills">
+        <h3> Opponent </h3>
+        <div class="btn--big pc-skill">
+
+        </div>
+      </div>
       <!-- Countdown-->
       <div>
       <!-- 3, 2, 1, Joust!-->
       </div>
-      <span>
-          <h3> You </h3>
-          <!-- Yor selected Skill-->
-          <div class="player-skill">
-
-          </div>
-      </span>
-      <span>
-          <h2>VS</h2>
-      </span>
-      <span>
-          <h3> Opponent </h3>
-          <!-- Computer selected skill-->
-          <div class="computer-skill">
-
-          </div>
-      </span>
       <!-- Animation-->
-      <div>
+      <div class="anima-section">
         <!-- Knight 1-->
         <div id="player">
 
@@ -70,20 +75,20 @@
     </div>
     <!-- Skill-List-->
     <div class="controls-area">
-      <button data-type="shield" class="btn">
+      <button data-type="shield" class="btn btn--big btn--shield">
         Shield
       </button>
-      <button data-type="lance" class="btn">
+      <button data-type="lance" class="btn btn--big btn--lance">
         Lance
       </button>
-      <button data-type="ride" class="btn">
+      <button data-type="ride" class="btn btn--big btn--ride">
         Ride
       </button>     
     </div>
   </section>
 
   <!-- Score section-->
-  <section>
+  <section class="score-section">
     <h2>Score:</h2>
     <div>
       <p><span id="score">0</span> Points</p>
