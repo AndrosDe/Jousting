@@ -42,6 +42,13 @@ header, .score-section {
   visibility: hidden;
 }
 
+.vs{
+  background-image: url(../images/vs.png);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /* Countdown */
 #countdown {
   margin-top: 1%;
@@ -50,7 +57,7 @@ header, .score-section {
 
 /* Animation */
 .anima-section {
-  margin-top: 1%;
+  margin-top: 0.5%;
   height: 250px;
   background-color: #e1ebb6;
 }
@@ -68,6 +75,8 @@ header, .score-section {
   border-top: 6px solid #DDDDDD;
   border-right: 6px solid #888888;
   border-bottom: 6px solid #888888;
+  padding-top: 0%;
+  padding-bottom: 0%;
 }
 
 .btn--big, .vs{
@@ -82,4 +91,24 @@ header, .score-section {
   background-color: #F2F2F2;
 }
 
+.btn--shield {
+  background-image: url(../images/shield.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn--lance {
+  background-image: url(../images/lance.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn--ride {
+  background-image: url(../images/horse.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /* Score Section */
