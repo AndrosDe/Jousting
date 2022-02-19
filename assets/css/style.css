@@ -3,20 +3,35 @@ body {
   background-color: white;
   font-family: 'Germania One', sans-serif;
   text-align: center;
+  font-size: 150%;
 }
 h1, h2 {
     margin: 0;
 }
 
+h1 {
+  font-size: 300%;
+  letter-spacing: 5px;
+}
+
 /* Heading */
-header {
+header, .score-section {
   background-color: #8A2F24;
   color: #FFFFFF;
+  padding: 0.5%;
 }
+
+
 
 /* Game Section */
 .game-section {
   background-color: #EBD2B6;
+  padding: 1% 0%;
+  border: 10px solid #8A2F24;
+}
+
+.game-section h2 {
+  font-size: 250%;
 }
 
 .used-skills {
@@ -27,36 +42,44 @@ header {
   visibility: hidden;
 }
 
+/* Countdown */
+#countdown {
+  margin-top: 1%;
+  font-size: 600%;
+}
+
 /* Animation */
 .anima-section {
   margin-top: 1%;
-  height: 300px;
+  height: 250px;
   background-color: #e1ebb6;
 }
 
 /* Buttons */
 .btn {
   margin: 1%;
-  padding: 0.5%;
 }
 
 .btn--start{
   letter-spacing: 1.2px;
-  font-size: 300%;
+  font-size: 250%;
+  background-color: #F2F2F2;
+  border-left: 6px solid #DDDDDD;
+  border-top: 6px solid #DDDDDD;
+  border-right: 6px solid #888888;
+  border-bottom: 6px solid #888888;
 }
 
 .btn--big, .vs{
-  width: 225px;
-  height: 225px;
+  width: 200px;
+  height: 200px;
+  padding: 0.5%;
 }
 
 .btn--big {
   border-radius: 50%;
   border: 10px solid #8A2F24;
+  background-color: #F2F2F2;
 }
 
 /* Score Section */
-.score-section {
-  background-color: #8A2F24;
-  color: #FFFFFF;  
-}
