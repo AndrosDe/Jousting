@@ -58,13 +58,38 @@ header, .score-section {
 /* Animation */
 .anima-section {
   margin-top: 0.5%;
-  height: 250px;
+  height: 450px;
   background-color: #e1ebb6;
+  background-image: url(../images/castle-bg3.webp);
+  background-position: center;
+}
+
+.stage {
+  margin-top: 100px;
+  display: inline-flex;
+}
+
+#player {
+  height: 225px;
+  width: 359px;
+  background-image: url(../images/yellow_knight.gif);
+}
+
+#opponent {
+  height: 225px;
+  width: 360px;
+  background-image: url(../images/blue_knight.gif);
+}
+
+#clash {
+  height: 200px;
+  width: 178px;
+  background-image: url(../images/crash.webp);
 }
 
 /* Buttons */
 .btn {
-  margin: 1%;
+  margin: 1% 1% 0 1%;
 }
 
 .btn--start{
