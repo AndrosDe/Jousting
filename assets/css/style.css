@@ -73,12 +73,28 @@ header, .score-section {
   height: 225px;
   width: 359px;
   background-image: url(../images/yellow_knight.gif);
+  position: relative;
+  right: 90%;
+  animation: playermove 5s;
+}
+
+@keyframes playermove {
+  from {right: 90%;}
+  to {right: 0%;}
 }
 
 #opponent {
   height: 225px;
   width: 360px;
   background-image: url(../images/blue_knight.gif);
+  position: relative;
+  left: 90%;
+  animation: oppmove 5s;
+}
+
+@keyframes oppmove {
+  from {left: 90%;}
+  to {left: 0%;}
 }
 
 #clash {
@@ -90,6 +106,7 @@ header, .score-section {
 /* Buttons */
 .btn {
   margin: 1% 1% 0 1%;
+  cursor: pointer;
 }
 
 .btn:focus {
@@ -97,15 +114,20 @@ header, .score-section {
 }
 
 .btn--start{
+  width: 109px;
+  height: 50px;
+  text-align: center;
   letter-spacing: 1.2px;
   font-size: 250%;
   background-color: #F2F2F2;
-  border-left: 6px solid #DDDDDD;
-  border-top: 6px solid #DDDDDD;
-  border-right: 6px solid #888888;
-  border-bottom: 6px solid #888888;
   padding-top: 0%;
   padding-bottom: 0%;
+  }
+
+.btn--start:active {
+  letter-spacing: 1.1px;
+  font-size: 225%;
+  background-color: #DDDDDD;
 }
 
 .btn--big, .btn--skill, .vs{
@@ -120,17 +142,13 @@ header, .score-section {
   background-color: #F2F2F2;
 }
 
-.btn--big::after {
-  background-color: #CCCCCC;
-  position: relative;
-  left: -0.5em;
-}
-
 .btn--big:hover {
   background-color: #DDDDDD;
+  transition-duration: 0.4s;
 }
 
-.btn--big:active {
+.btn--big:focus {
+  outline: none;
   background-color: #CCCCCC;
 }
 
