@@ -92,6 +92,10 @@ header, .score-section {
   margin: 1% 1% 0 1%;
 }
 
+.btn:focus {
+  outline: none;
+}
+
 .btn--start{
   letter-spacing: 1.2px;
   font-size: 250%;
@@ -104,16 +108,30 @@ header, .score-section {
   padding-bottom: 0%;
 }
 
-.btn--big, .vs{
+.btn--big, .btn--skill, .vs{
   width: 200px;
   height: 200px;
   padding: 0.5%;
 }
 
-.btn--big {
+.btn--big, .btn--skill {
   border-radius: 50%;
   border: 10px solid #8A2F24;
   background-color: #F2F2F2;
+}
+
+.btn--big::after {
+  background-color: #CCCCCC;
+  position: relative;
+  left: -0.5em;
+}
+
+.btn--big:hover {
+  background-color: #DDDDDD;
+}
+
+.btn--big:active {
+  background-color: #CCCCCC;
 }
 
 .btn--shield {
