@@ -1,6 +1,6 @@
 // Countdown
 
-let countdown = 10;
+let countdown = 3;
 let x = setInterval(function() {
   if(countdown <= 0) {
     clearInterval(x)
@@ -8,3 +8,4 @@ let x = setInterval(function() {
   document.getElementById("countdown").innerHTML = 0 + countdown;
   countdown -= 1;
 }, 1000);
+

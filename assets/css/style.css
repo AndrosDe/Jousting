@@ -21,12 +21,10 @@ header, .score-section {
   padding: 0.5%;
 }
 
-
-
 /* Game Section */
 .game-section {
   background-color: #EBD2B6;
-  padding: 1% 0%;
+  padding: 0;
   border: 10px solid #8A2F24;
 }
 
@@ -74,13 +72,13 @@ header, .score-section {
   width: 359px;
   background-image: url(../images/yellow_knight.gif);
   position: relative;
-  right: 90%;
+  right: -20%;
   animation: playermove 5s;
 }
 
 @keyframes playermove {
   from {right: 90%;}
-  to {right: 0%;}
+  to {right: -20%;}
 }
 
 #opponent {
@@ -88,25 +86,43 @@ header, .score-section {
   width: 360px;
   background-image: url(../images/blue_knight.gif);
   position: relative;
-  left: 90%;
+  left: -20%;
   animation: oppmove 5s;
 }
 
 @keyframes oppmove {
   from {left: 90%;}
-  to {left: 0%;}
+  to {left: -20%;}
 }
 
 #clash {
   height: 200px;
   width: 178px;
   background-image: url(../images/crash.webp);
+  z-index: 2;
+
+  animation-name: clash-zoom;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes clash-zoom {
+  from{
+      transform: scale(1);
+  }
+  to{
+      transform: scale(1.8);
+  }
 }
 
 /* Buttons */
 .btn {
-  margin: 1% 1% 0 1%;
+  margin: 0.25%;
   cursor: pointer;
+}
+
+.btn:active {
+  outline: none !important;
 }
 
 .btn:focus {
@@ -116,18 +132,25 @@ header, .score-section {
 .btn--start{
   width: 109px;
   height: 50px;
-  text-align: center;
   letter-spacing: 1.2px;
-  font-size: 250%;
+  text-align: center;
+  font-size: 200%;
   background-color: #F2F2F2;
-  padding-top: 0%;
-  padding-bottom: 0%;
+  padding: 0;
+  border-top: 8px solid #CCCCCC;
+  border-left: 8px solid #CCCCCC;
+  border-bottom: 8px solid #888888;
+  border-right: 8px solid #888888;
   }
 
 .btn--start:active {
   letter-spacing: 1.1px;
-  font-size: 225%;
+  font-size: 175%;
   background-color: #DDDDDD;
+  border-top: 8px solid #888888;
+  border-left: 8px solid #888888;
+  border-bottom: 8px solid #CCCCCC;
+  border-right: 8px solid #CCCCCC;
 }
 
 .btn--big, .btn--skill, .vs{
@@ -144,11 +167,10 @@ header, .score-section {
 
 .btn--big:hover {
   background-color: #DDDDDD;
-  transition-duration: 0.4s;
+  transition-duration: 0.8s;
 }
 
 .btn--big:focus {
-  outline: none;
   background-color: #CCCCCC;
 }
 
@@ -159,6 +181,10 @@ header, .score-section {
   background-position: center;
 }
 
+.btn--shield:active {
+  background-image: url(../images/shield.png);
+}
+
 .btn--lance {
   background-image: url(../images/lance.png);
   background-size: 90%;
@@ -166,10 +192,18 @@ header, .score-section {
   background-position: center;
 }
 
+.btn--lance:active {
+  background-image: url(../images/lance.png);
+}
+
 .btn--ride {
   background-image: url(../images/horse.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.btn--ride:active {
+  background-image: url(../images/horse.png);
 }
 /* Score Section */
