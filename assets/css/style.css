@@ -92,10 +92,6 @@ header, .score-section {
   background-image: url(../images/crash.webp);
   position: relative;
   z-index: 2;
-
-  animation-name: clash-zoom;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 @keyframes clash-zoom {

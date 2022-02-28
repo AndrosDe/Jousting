@@ -51,4 +51,10 @@ document.getElementById("opponent").style.visibility = "visible";
 
 function clashZoom() {
 document.getElementById("clash").style.visibility = "visible";
+let clash = document.getElementById("clash");
+
+clash.style.animationName = "clash-zoom";
+clash.style.animationDuration = "2s";
+clash.style.animationFillMode = "forwards";
+
 }
