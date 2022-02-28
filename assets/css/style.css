@@ -47,6 +47,10 @@ header, .score-section {
   background-position: center;
 }
 
+#player, #opponent, #clash, #countdown {
+  visibility: hidden;
+}
+
 /* Countdown */
 #countdown {
   margin-top: 1%;
@@ -65,40 +69,28 @@ header, .score-section {
 .stage {
   margin-top: 100px;
   display: inline-flex;
+  position: relative;
 }
 
 #player {
   height: 225px;
   width: 359px;
   background-image: url(../images/yellow_knight.gif);
-  position: relative;
-  right: -20%;
-  animation: playermove 5s;
-}
-
-@keyframes playermove {
-  from {right: 90%;}
-  to {right: -20%;}
+  position: absolute;
 }
 
 #opponent {
   height: 225px;
   width: 360px;
   background-image: url(../images/blue_knight.gif);
-  position: relative;
-  left: -20%;
-  animation: oppmove 5s;
-}
-
-@keyframes oppmove {
-  from {left: 90%;}
-  to {left: -20%;}
-}
+  position: absolute;
+  }
 
 #clash {
   height: 200px;
   width: 178px;
   background-image: url(../images/crash.webp);
+  position: relative;
   z-index: 2;
 
   animation-name: clash-zoom;

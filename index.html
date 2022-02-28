@@ -6,7 +6,6 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Jousting Game" content="A Java Script based Jousting Game"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 <!-- font awesome and google fonts -->
 <script src="https://kit.fontawesome.com/5bf0c6b681.js" crossorigin="anonymous"></script>
@@ -27,7 +26,7 @@
     <h3>Press "Start" to begin the countdown!</h3>
     <!-- Start Game Button-->
     <div id="game-starter"> 
-      <button data-type="start" class="btn btn--start">
+      <button onclick="playerMove(), opponentMove(), countdown(), clashZoom()" data-type="start" class="btn btn--start">
         Start
       </button>
     </div>
@@ -58,7 +57,7 @@
       <div class="anima-section">
       <!-- Countdown-->
         <div>
-          <h2 id="countdown">Countdown</h2>
+          <h2 id="countdown">4</h2>
         </div>
         
         <div class="stage">
