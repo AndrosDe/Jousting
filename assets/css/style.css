@@ -94,6 +94,15 @@ header, .score-section {
   z-index: 2;
 }
 
+@keyframes clash-zoom {
+  from{
+      transform: scale(1);
+  }
+  to{
+      transform: scale(1.5);
+  }
+}
+
 
 /* Buttons */
 .btn {

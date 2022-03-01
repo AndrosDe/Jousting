@@ -26,6 +26,9 @@ function countdown() {
     if(countdown <= 0) {
       clearInterval(x)
       document.getElementById("clash").style.visibility = "visible";
+      document.getElementById("clash").style.animationName = "clash-zoom";
+      document.getElementById("clash").style.animationDuration = "1s";
+      document.getElementById("clash").style.animationFillMode = "forwards";
     }
   document.getElementById("countdown").innerHTML = 0 + countdown;
   countdown -= 1;
