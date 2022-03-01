@@ -1,34 +1,34 @@
-// Countdown
-
+// Countdown - this will start a display of number counting down, which might be used later to check if a skill was selected before the value was at "0"
 function countdown() {
   document.getElementById("countdown").style.visibility = "visible";
-let countdown = 3;
-let x = setInterval(function() {
-  if(countdown <= 0) {
-    clearInterval(x)
-  }
+  let countdown = 3;
+  let x = setInterval(function() {
+    if(countdown <= 0) {
+      clearInterval(x)
+    }
   document.getElementById("countdown").innerHTML = 0 + countdown;
   countdown -= 1;
-}, 1000);
+  }, 1000);
 }
-
-
+  
+// The visusal aid of the animated knight running towards each other to support the countdown
 function playerMove() {
-  document.getElementById("player").style.visibility = "visible";
+    document.getElementById("player").style.visibility = "visible";
 
-  let id = null;
-  let elem = document.getElementById("player");
-  let pos = -800;
-  clearInterval(id);
-  id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 2) {
-      clearInterval(id);
-    } else {
-      pos++;
-      elem.style.right = -pos + 'px';
+    let id = null;
+    let elem = document.getElementById("player");
+    let pos = -800;
+    clearInterval(id);
+    id = setInterval(frame, 5);
+
+    function frame() {
+      if (pos == 2) {
+        clearInterval(id);
+      } else {
+        pos++;
+        elem.style.right = -pos + 'px';
+      }
     }
-  }
 }
 
 function opponentMove() {
@@ -39,22 +39,18 @@ document.getElementById("opponent").style.visibility = "visible";
   let pos = -800;
   clearInterval(id);
   id = setInterval(frame, 5);
+  
   function frame() {
-    if (pos == 2) {
-      clearInterval(id);
-    } else {
-      pos++;
-      elem.style.left = -pos + 'px';
-    }
+      if (pos == 2) {
+        clearInterval(id);
+      } else {
+        pos++;
+        elem.style.left = -pos + 'px';
+      }
   }
 }
 
 function clashZoom() {
-document.getElementById("clash").style.visibility = "visible";
-let clash = document.getElementById("clash");
-
-clash.style.animationName = "clash-zoom";
-clash.style.animationDuration = "2s";
-clash.style.animationFillMode = "forwards";
-
-}
+  document.getElementById("clash").style.visibility = "visible";
+  document.getElementById("clash").style.transform = "scale(1.5,1.5)";
+  }
