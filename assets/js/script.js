@@ -1,3 +1,23 @@
+document.addEventListener ("DOMContentLoaded", function() {
+  let buttons = document.getElementsByTagName ("button");
+
+  for (let button of buttons){
+    button.addEventListener("click", function(){
+      if (this.getAttribute("data-type") === "start") {
+        document.getElementById("countdown").innerHTML = 4;
+        document.getElementById("clash").style = "";
+        countdown();
+        playerMove();
+        opponentMove();
+      } else {
+        let skillType = this.getAttribute("data-type");
+        alert(`You clicked ${skillType}`);
+      }
+    })
+  }
+})
+
+
 // Countdown - this will start a display of number counting down, which might be used later to check if a skill was selected before the value was at "0"
 function countdown() {
   document.getElementById("countdown").style.visibility = "visible";
@@ -5,6 +25,7 @@ function countdown() {
   let x = setInterval(function() {
     if(countdown <= 0) {
       clearInterval(x)
+      document.getElementById("clash").style.visibility = "visible";
     }
   document.getElementById("countdown").innerHTML = 0 + countdown;
   countdown -= 1;
@@ -49,8 +70,3 @@ document.getElementById("opponent").style.visibility = "visible";
       }
   }
 }
-
-function clashZoom() {
-  document.getElementById("clash").style.visibility = "visible";
-  document.getElementById("clash").style.transform = "scale(1.5,1.5)";
-  }
