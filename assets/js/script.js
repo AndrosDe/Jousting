@@ -37,22 +37,22 @@ function countdown() {
   
 // The visusal aid of the animated knight running towards each other to support the countdown
 function playerMove() {
-    document.getElementById("player").style.visibility = "visible";
+  document.getElementById("player").style.visibility = "visible";
 
-    let id = null;
-    let elem = document.getElementById("player");
-    let pos = -800;
-    clearInterval(id);
-    id = setInterval(frame, 5);
+  let id = null;
+  let elem = document.getElementById("player");
+  let pos = -800;
+  clearInterval(id);
+  id = setInterval(frame, 5);
 
-    function frame() {
-      if (pos == 2) {
-        clearInterval(id);
-      } else {
-        pos++;
-        elem.style.right = -pos + 'px';
-      }
+  function frame() {
+    if (pos == 2) {
+      clearInterval(id);
+    } else {
+      pos++;
+      elem.style.right = -pos + 'px';
     }
+  }
 }
 
 function opponentMove() {
@@ -65,11 +65,11 @@ document.getElementById("opponent").style.visibility = "visible";
   id = setInterval(frame, 5);
   
   function frame() {
-      if (pos == 2) {
-        clearInterval(id);
+    if (pos == 2) {
+      clearInterval(id);
       } else {
         pos++;
         elem.style.left = -pos + 'px';
       }
-  }
+    }
 }
