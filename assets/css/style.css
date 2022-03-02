@@ -36,8 +36,18 @@ header, .score-section {
   display: inline-block;
 }
 
-#hidden {
+#hidden, #p-skill, #o-skill, #vs-skill, #player, #opponent, #clash, #countdown {
   visibility: hidden;
+}
+
+.player-skill, .pc-skill {
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#hidden, #vs-skill, #p-skill, #o-skill {
+  margin: 0;
 }
 
 .vs{
@@ -45,10 +55,6 @@ header, .score-section {
   background-size: 120%;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-#player, #opponent, #clash, #countdown {
-  visibility: hidden;
 }
 
 /* Countdown */
