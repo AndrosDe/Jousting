@@ -10,6 +10,8 @@ document.addEventListener ("DOMContentLoaded", function() {
       if (this.getAttribute("data-type") === "start") {
         document.getElementById("countdown").innerHTML = 4;
         document.getElementById("clash").style = "";
+        document.getElementById("p-skill").innerText = "Null";
+        document.getElementById("o-skill").innerText = "Null";
         countdown();
         playerMove();
         opponentMove();
@@ -94,12 +96,18 @@ function runGame() {
     button.addEventListener("click", function(){
       if (this.getAttribute("data-type") === "shield") {
         document.getElementsByClassName("player-skill").style.background = "url(../images/shield.png)";
-        alert(`You clicked Shield`);
+        document.getElementById("p-skill").innerText = "Shield";
+        
       } else if (this.getAttribute("data-type") === "lance") {
         document.getElementsByClassName("player-skill").style.background = "url(../images/lance.png)";
+        document.getElementById("p-skill").innerText = "Lance";
+
       } else if (this.getAttribute("data-type") === "ride") {
         document.getElementsByClassName("player-skill").style.background = "url(../images/horse.png)";
+        document.getElementById("p-skill").innerText = "Ride";
+
       } else if (this.getAttribute("data-type") === "") {
+        document.getElementById("p-skill").innerText = "Null";
       }
     }
   )}
@@ -115,10 +123,15 @@ function opponentSkill(){
   
   if (skills.indexOf("shield") === num ){
     document.getElementsByClassName("pc-skill").style.background = "url(../images/shield.png)";
+    document.getElementById("o-skill").innerText = "Shield";
+
   } else if (skills.indexOf("lance") === num ){
     document.getElementsByClassName("pc-skill").style.background = "url(../images/lance.png)";
+    document.getElementById("p-skill").innerText = "Lance";
+
   } else {
     document.getElementsByClassName("pc-skill").style.background = "url(../images/horse.png)";
+    document.getElementById("p-skill").innerText = "Ride";
   }   
 }
 
