@@ -20,6 +20,7 @@
       } else {
         document.getElementById("countdown").innerHTML = 4;
         document.getElementById("clash").style = "";
+        document.getElementById("message").style = "";
         document.getElementById("p-skill").innerText = "Null";
         document.getElementById("o-skill").innerText = "Null";
         countdown();
@@ -103,6 +104,7 @@ function opponentSkill(){
 
   if (skills.indexOf("shield") === num ){
     document.getElementById("o-skill").innerText = "Shield";
+    document.getElementById("pc-skill").style.backgroundImage = "url(../images/shield.png)"; //Not working for some reason
 
   } else if (skills.indexOf("lance") === num ){
     document.getElementById("o-skill").innerText = "Lance";
@@ -114,14 +116,56 @@ function opponentSkill(){
 
 /**
  * Function to compare player skill and computer skill and determine the winner
+ * Shield > Lance
+ * Lance > Speed
+ * Speed > Shield
  */
 function compareSkill(){
   let playerSkill = document.getElementById("p-skill").innerText;
   let oppSkill = document.getElementById("o-skill").innerText;
   
-  if (playerSkill === oppSkill){
-    alert("Oh! It's a draw!");
+    //Draw
+  if (playerSkill === oppSkill){ 
+    document.getElementById("message").style.visibility = "visible";
+    document.getElementById("message").innerText = "Oh! It's a draw!";
     drawScore();
+    
+  } else if (playerSkill === "Shield"){
+    if (oppSkill === "Lance"){
+      document.getElementById("message").style.visibility = "visible";
+      document.getElementById("message").innerText = "Victory! Your shield stood strong!";
+      winScore();
+    } else if (oppSkill === "Ride"){
+      document.getElementById("message").style.visibility = "visible";
+      document.getElementById("message").innerText = "Ouch! He nimbly bypassed your shield!";
+      loseScore();
+    }  
+
+  } else if (playerSkill === "Lance"){
+    if (oppSkill === "Ride"){
+    document.getElementById("message").style.visibility = "visible";
+    document.getElementById("message").innerText = "Victory! Your lance scored a hit!";
+    winScore();
+    } else if (oppSkill === "Shield"){
+      document.getElementById("message").style.visibility = "visible";
+      document.getElementById("message").innerText = "Ouch! Your lance broke upon his shield!";
+      loseScore();
+    }
+
+  } else if (playerSkill === "Ride"){
+    if (oppSkill === "Shield"){
+      document.getElementById("message").style.visibility = "visible";
+      document.getElementById("message").innerText = "Victory! Your nimbleness bypassed the shield!";
+      winScore();
+    } else if (oppSkill === "Lance"){
+      document.getElementById("message").style.visibility = "visible";
+      document.getElementById("message").innerText = "Ouch! Your nimbleness did not prevent this blow!";
+      loseScore();
+    }
+
+  } else {
+    document.getElementById("message").style.visibility = "visible";
+    document.getElementById("message").innerText = "You forfeit this round!";
   }
 }
 

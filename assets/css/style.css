@@ -36,7 +36,7 @@ header, .score-section {
   display: inline-block;
 }
 
-#hidden, #vs-skill, #player, #opponent, #clash, #countdown {
+#hidden, #vs-skill, #player, #opponent, #clash, #countdown, #message {
   visibility: hidden;
 }
 
@@ -75,7 +75,7 @@ header, .score-section {
   position: absolute;
   width: 33%;
   left: 33%;
-  font-size: 600%;
+  font-size: 450%;
   z-index: 5;
   text-align: center;
   background-color: rgba(225, 235, 182, 0.7);
