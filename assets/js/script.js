@@ -43,6 +43,7 @@ function countdown() {
       document.getElementById("clash").style.animationDuration = "1s";
       document.getElementById("clash").style.animationFillMode = "forwards";
       opponentSkill();
+      compareSkill();
     }
   document.getElementById("countdown").innerHTML = 0 + countdown;
   countdown -= 1;
@@ -114,19 +115,32 @@ function opponentSkill(){
 /**
  * Function to compare player skill and computer skill and determine the winner
  */
-
+function compareSkill(){
+  let playerSkill = document.getElementById("p-skill").innerText;
+  let oppSkill = document.getElementById("o-skill").innerText;
+  
+  if (playerSkill === oppSkill){
+    alert("Oh! It's a draw!");
+    drawScore();
+  }
+}
 
 //Score
 /**
  * Gets the current Score from the DOM and adds the appropriate value to it
  * 1000 for a Win
- * 50 for participation (due to the high randomness and chanceto fail by bad luck)
+ * 50 for participation (due to the high randomness and chance to fail by bad luck)
  * Only not choosing any skill will award no points
  */
 
 function winScore() {
   let oldScore = parseInt(document.getElementById("score").innerText);
   document.getElementById("score").innerText = oldScore + 1000;
+}
+
+function drawScore() {
+  let oldScore = parseInt(document.getElementById("score").innerText);
+  document.getElementById("score").innerText = oldScore + 500;
 }
 
 function loseScore() {

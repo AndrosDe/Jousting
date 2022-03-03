@@ -71,6 +71,17 @@ header, .score-section {
   font-size: 600%;
 }
 
+#message {
+  position: absolute;
+  width: 33%;
+  left: 33%;
+  font-size: 600%;
+  z-index: 5;
+  text-align: center;
+  background-color: rgba(225, 235, 182, 0.7);
+  padding: 0 0.5%;
+}
+
 /* Animation */
 .anima-section {
   margin-top: 0.5%;
