@@ -1,13 +1,23 @@
 // This script should only start once the DOM has finished loading
 /** The start-function gets all the buttons of the DOM and adds event listner to them
  *  The respective functions are all called by clicking "Start".
+ *  Clicking the other button will change the content on the user 
  */
-document.addEventListener ("DOMContentLoaded", function() {
+ document.addEventListener ("DOMContentLoaded", function() {
   let buttons = document.getElementsByTagName("button");
 
   for (let button of buttons){
     button.addEventListener("click", function(){
-      if (this.getAttribute("data-type") === "start") {
+      if (this.getAttribute("data-type") === "shield") {
+        document.getElementById("p-skill").innerText = "Shield";
+
+      } else if (this.getAttribute("data-type") === "lance") {
+        document.getElementById("p-skill").innerText = "Lance";
+
+      } else if (this.getAttribute("data-type") === "ride") {
+        document.getElementById("p-skill").innerText = "Ride";
+
+      } else {
         document.getElementById("countdown").innerHTML = 4;
         document.getElementById("clash").style = "";
         document.getElementById("p-skill").innerText = "Null";
@@ -15,9 +25,6 @@ document.addEventListener ("DOMContentLoaded", function() {
         countdown();
         playerMove();
         opponentMove();
-        runGame();
-      } else {
-
       }
     })
   }
@@ -35,6 +42,7 @@ function countdown() {
       document.getElementById("clash").style.animationName = "clash-zoom";
       document.getElementById("clash").style.animationDuration = "1s";
       document.getElementById("clash").style.animationFillMode = "forwards";
+      opponentSkill();
     }
   document.getElementById("countdown").innerHTML = 0 + countdown;
   countdown -= 1;
@@ -84,55 +92,23 @@ document.getElementById("opponent").style.visibility = "visible";
 }
 
 
-// Main Game Functions
 /**
- * Function to check which skill button has been clicked
- * This should then be displayed in the "player-skill"-div and may add a value to the hidden section of the page for comparison
- */
-function runGame() {
-  let buttons = document.getElementsByTagName("button");
-
-  for (let button of buttons){
-    button.addEventListener("click", function(){
-      if (this.getAttribute("data-type") === "shield") {
-        document.getElementsByClassName("player-skill").style.background = "url(../images/shield.png)";
-        document.getElementById("p-skill").innerText = "Shield";
-        
-      } else if (this.getAttribute("data-type") === "lance") {
-        document.getElementsByClassName("player-skill").style.background = "url(../images/lance.png)";
-        document.getElementById("p-skill").innerText = "Lance";
-
-      } else if (this.getAttribute("data-type") === "ride") {
-        document.getElementsByClassName("player-skill").style.background = "url(../images/horse.png)";
-        document.getElementById("p-skill").innerText = "Ride";
-
-      } else if (this.getAttribute("data-type") === "") {
-        document.getElementById("p-skill").innerText = "Null";
-      }
-    }
-  )}
-}
-
-/**
- * Function to randomly create 1, 2 or 3 to choose the computer picked skill
- * Function to set up an array of [shield, lance, ride] and assign them an index
+ * Function to randomly create 0, 1 or 2 to choose the computer picked skill
+ * Function to set up an array of ["shield", "lance", "ride"] and assign them an index
  */
 function opponentSkill(){
-  let skills = [shield, lance, ride]
+  let skills = ["shield", "lance", "ride"];
   let num = Math.floor(Math.random() *3);
-  
+
   if (skills.indexOf("shield") === num ){
-    document.getElementsByClassName("pc-skill").style.background = "url(../images/shield.png)";
     document.getElementById("o-skill").innerText = "Shield";
 
   } else if (skills.indexOf("lance") === num ){
-    document.getElementsByClassName("pc-skill").style.background = "url(../images/lance.png)";
-    document.getElementById("p-skill").innerText = "Lance";
+    document.getElementById("o-skill").innerText = "Lance";
 
   } else {
-    document.getElementsByClassName("pc-skill").style.background = "url(../images/horse.png)";
-    document.getElementById("p-skill").innerText = "Ride";
-  }   
+    document.getElementById("o-skill").innerText = "Ride";
+  }
 }
 
 /**
