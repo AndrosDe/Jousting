@@ -8,7 +8,6 @@ body {
 h1, h2 {
     margin: 0;
 }
-
 h1 {
   font-size: 300%;
   letter-spacing: 5px;
@@ -18,7 +17,7 @@ h1 {
 header, .score-section {
   background-color: #8A2F24;
   color: #FFFFFF;
-  padding: 0.5%;
+  padding: 0.15%;
 }
 
 /* Game Section */
@@ -27,37 +26,29 @@ header, .score-section {
   padding: 0;
   border: 10px solid #8A2F24;
 }
-
 .game-section h2 {
   font-size: 250%;
 }
-
 .used-skills {
   display: inline-block;
 }
-
 #hidden, #vs-skill, #player, #opponent, #clash, #countdown, #message {
   visibility: hidden;
 }
-
+#hidden, #vs-skill, #p-skill, #o-skill {
+  margin: 0;
+}
 #player-skill, #pc-skill {
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 #player-skill {
   background-image: none;
 }
-
 #pc-skill {
   background-image: none;
 }
-
-#hidden, #vs-skill, #p-skill, #o-skill {
-  margin: 0;
-}
-
 #vs{
   background-image: url(../images/vs.png);
   background-size: 120%;
@@ -70,7 +61,6 @@ header, .score-section {
   margin-top: 1%;
   font-size: 600%;
 }
-
 #message {
   position: absolute;
   width: 33%;
@@ -90,27 +80,23 @@ header, .score-section {
   background-image: url(../images/castle-bg3.webp);
   background-position: center;
 }
-
 .stage {
   margin-top: 100px;
   display: inline-flex;
   position: relative;
 }
-
 #player {
   height: 225px;
   width: 359px;
   background-image: url(../images/yellow_knight.gif);
   position: absolute;
 }
-
 #opponent {
   height: 225px;
   width: 360px;
   background-image: url(../images/blue_knight.gif);
   position: absolute;
   }
-
 #clash {
   height: 200px;
   width: 178px;
@@ -118,7 +104,6 @@ header, .score-section {
   position: relative;
   z-index: 2;
 }
-
 @keyframes clash-zoom {
   from{
       transform: scale(1);
@@ -128,21 +113,17 @@ header, .score-section {
   }
 }
 
-
 /* Buttons */
 .btn {
   margin: 0.25%;
   cursor: pointer;
 }
-
 .btn:active {
   outline: none !important;
 }
-
 .btn:focus {
   outline: none;
 }
-
 .btn--start{
   width: 109px;
   height: 50px;
@@ -156,7 +137,6 @@ header, .score-section {
   border-bottom: 8px solid #888888;
   border-right: 8px solid #888888;
   }
-
 .btn--start:active {
   letter-spacing: 1.1px;
   font-size: 175%;
@@ -166,58 +146,52 @@ header, .score-section {
   border-bottom: 8px solid #CCCCCC;
   border-right: 8px solid #CCCCCC;
 }
-
 .btn--big, .btn--skill, #vs{
   width: 200px;
   height: 200px;
   padding: 0.5%;
 }
-
 .btn--big, .btn--skill {
   border-radius: 50%;
   border: 10px solid #8A2F24;
   background-color: #F2F2F2;
 }
-
 .btn--big:hover {
   background-color: #DDDDDD;
   transition-duration: 0.8s;
 }
-
 .btn--big:focus {
   background-color: #CCCCCC;
 }
-
 .btn--shield {
   background-image: url(../images/shield.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .btn--shield:active {
   background-image: url(../images/shield.png);
 }
-
 .btn--lance {
   background-image: url(../images/lance.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .btn--lance:active {
   background-image: url(../images/lance.png);
 }
-
 .btn--ride {
   background-image: url(../images/horse.png);
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .btn--ride:active {
   background-image: url(../images/horse.png);
 }
+
 /* Score Section */
+#score {
+  font-size: 150%;
+}
