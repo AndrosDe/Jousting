@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Jousting Game" content="A Java Script based Jousting Game"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Jousting Game" content="A Java Script based Jousting Game"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!-- font awesome and google fonts -->
-<script src="https://kit.fontawesome.com/5bf0c6b681.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Jousting</title>
+  </head>
 
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Jousting</title>
-</head>
-
-<body>
-  <header>
+  <body>
+    <header>
     <h1>Jousting</h1>
-  </header>
+    </header>
 
   <!-- Main Game section-->
-  <section class="game-section">
+    <section class="game-section">
     <h3>Press "Start" to begin the countdown!</h3>
     <!-- Start Game Button-->
     <div id="game-starter"> 
@@ -35,7 +32,7 @@
       <!-- Your selected Skill-->
       <div class="used-skills" id="used-skill1">
         <h3> You </h3>
-        <div class="btn--skill" id="player-skill">
+        <div class="btn--skill" id="player-skill" title="null">
           <p id="p-skill">Null</p>
         </div>
       </div>
@@ -50,7 +47,7 @@
       <!-- Computer selected skill-->
       <div class="used-skills" id="used-skill2">
         <h3> Opponent </h3>
-        <div class="btn--skill" id="pc-skill">
+        <div class="btn--skill" id="pc-skill" title="null">
           <p id="o-skill">Null</p>
         </div>
       </div>
@@ -68,11 +65,11 @@
         <!-- Running Animation-->
         <div class="stage">
           <!-- Knight 1-->
-          <div id="player" height="225px" width="359px"></div>
+          <div id="player"></div>
           <!-- Middel Collision-->
           <div id="clash"></div>
           <!-- Knight 2-->
-          <div id="opponent" height="225px" width="360px"></div>
+          <div id="opponent"></div>
         </div>
       </div>
     </div>
@@ -83,18 +80,18 @@
       <button data-type="lance" class="btn btn--big btn--lance"></button>
       <button data-type="ride" class="btn btn--big btn--ride"></button>
     </div>
-  </section>
+    </section>
 
   <!-- Score section-->
-  <section class="score-section">
+    <section class="score-section">
     <h2>Score:</h2>
     <div>
       <p><span id="score">0</span> Points</p>
     </div>
-  </section>
+    </section>
 
-  <script src="assets/js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
 </html>

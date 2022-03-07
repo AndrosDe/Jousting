@@ -27,9 +27,9 @@
         playerMove();
         opponentMove();
       }
-    })
+    });
   }
-})
+});
 
 
 // Countdown - this will start a display of number counting down, which might be used later to check if a skill was selected before the value was at "0"
@@ -38,7 +38,7 @@ function countdown() {
   let countdown = 3;
   let x = setInterval(function() {
     if(countdown <= 0) {
-      clearInterval(x)
+      clearInterval(x);
       document.getElementById("clash").style.visibility = "visible";
       document.getElementById("clash").style.animationName = "clash-zoom";
       document.getElementById("clash").style.animationDuration = "1s";
@@ -104,7 +104,6 @@ function opponentSkill(){
 
   if (skills.indexOf("shield") === num ){
     document.getElementById("o-skill").innerText = "Shield";
-    document.getElementById("pc-skill").style.backgroundImage = "url(../images/shield.png)"; //Not working for some reason
 
   } else if (skills.indexOf("lance") === num ){
     document.getElementById("o-skill").innerText = "Lance";
