@@ -70,23 +70,43 @@
   - #### Heading
     - The heading displays the clear title of the game.
 
+      <h3><img src="assets/images/screenshots/screenshot_heading.png" height="70" width="700"></h3>
+
   - #### Game Starter
     - The start button is central in the upper section of the page.
     - A message above the start button provides clear instuctions.
     - Pressing the start button will call upon the JavaScript functions.
 
+      <h3><img src="assets/images/screenshots/screenshot_start.png" height="70" width="400"></h3>
+
   - #### Selected Skill Section
     - The skills hat have been choosen by the player and the JavaScript generated skills are displayed here to visually confirm and display the skills that are compared for the current round.
 
-  - #### Animation Section
-    - Dormant, it will only display the background image of a castle / grass field.
-    - Once the start button has been pressed: The countdown will be displayed and an animation of two knights clashing will be displayed to underline the countdown.
-    - When the countdown is at zero a message about the result will be displayed.
+      <h3><img src="assets/images/screenshots/screenshot_used_skill.png" height="90" width="400"></h3>
+
+  - #### Animation
+    - An animation of two knights clashing will be displayed to underline the countdown.
+
+      <h3><img src="assets/images/screenshots/screenshot_animation.png" height="150" width="400"></h3>
+  
+  - #### Coundown
+    - Counting down for 5 seconds from "4" to "0".
+    - When the countdown is at "0" a message about the result will be displayed.
+
+      <h3><img src="assets/images/screenshots/screenshot_countdown.png" height="70" width="400"></h3>
+
+  - #### Message
+    - A clear and roleplay appropriate message displays the result of the tjost.
+    - Depending on the skills used and if it has been a won, draw, lost or forfeit round will change the message.
+
+      <h3><img src="assets/images/screenshots/screenshot_message.png" height="70" width="700"></h3>
 
   - #### Skill Selection Section
     - Three buttons are displaying the avaible options to the player.
     - A short explanation above the buttons.
     - A focused button will be set apart from the non-fcused buttons.
+
+      <h3><img src="assets/images/screenshots/screenshot_skill_selection.png" height="90" width="400"></h3>
 
   - #### Score Section
     - The Score Section will display the gained score with: 
@@ -95,6 +115,8 @@
       <br>50 for losing.
       <br> Not choosing any skill will be displayed as "forfeiting the round" and will give no points.
     - Currently the score is reset back to 0 once the website is refreshed.
+
+      <h3><img src="assets/images/screenshots/screenshot_score.png" height="70" width="400"></h3>
 
 - ### Features Left to Implement
   - #### Login
