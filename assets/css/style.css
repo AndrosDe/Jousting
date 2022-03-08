@@ -38,18 +38,13 @@ header, .score-section {
 .used-skills {
   display: inline-block;
 }
-#hidden, #vs-skill, #player, #opponent, #clash, #countdown, #message {
+#player, #opponent, #clash, #countdown, #message {
   visibility: hidden;
 }
-#hidden, #vs-skill, #p-skill, #o-skill {
-  margin: 0;
+#p-skill-image, #o-skill-image {
+  height: 80%;
+  margin-top: 7%;
 }
-#player-skill, #pc-skill {
-  background-size: 90%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 #vs{
   background-image: url(../images/vs.png);
   background-size: 120%;

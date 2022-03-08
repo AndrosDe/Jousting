@@ -9,21 +9,25 @@
   for (let button of buttons){
     button.addEventListener("click", function(){
       if (this.getAttribute("data-type") === "shield") {
-        document.getElementById("p-skill").innerText = "Shield";
-        document.getElementById("player-skill").style.backgroundImage = "url(../images/shield.png)";
+        document.getElementById("player-skill").title = "Shield";
+        document.getElementById("p-skill-image").src = "/assets/images/shield.png";
 
       } else if (this.getAttribute("data-type") === "lance") {
-        document.getElementById("p-skill").innerText = "Lance";
+        document.getElementById("player-skill").title = "Lance";
+        document.getElementById("p-skill-image").src = "/assets/images/lance.png";
 
       } else if (this.getAttribute("data-type") === "ride") {
-        document.getElementById("p-skill").innerText = "Ride";
+        document.getElementById("player-skill").title = "Ride";
+        document.getElementById("p-skill-image").src = "/assets/images/horse.png";
 
       } else {
         document.getElementById("countdown").innerHTML = 4;
         document.getElementById("clash").style = "";
         document.getElementById("message").style = "";
-        document.getElementById("p-skill").innerText = "Null";
-        document.getElementById("o-skill").innerText = "Null";
+        document.getElementById("player-skill").title = "Null";
+        document.getElementById("pc-skill").title = "Null";
+        document.getElementById("p-skill-image").src = "/assets/images/placeholder.png";
+        document.getElementById("o-skill-image").src = "/assets/images/placeholder.png";
         countdown();
         playerMove();
         opponentMove();
@@ -104,13 +108,16 @@ function opponentSkill(){
   let num = Math.floor(Math.random() *3);
 
   if (skills.indexOf("shield") === num ){
-    document.getElementById("o-skill").innerText = "Shield";
+    document.getElementById("pc-skill").title = "Shield";
+    document.getElementById("o-skill-image").src = "/assets/images/shield.png";
 
   } else if (skills.indexOf("lance") === num ){
-    document.getElementById("o-skill").innerText = "Lance";
+    document.getElementById("pc-skill").title = "Lance";
+    document.getElementById("o-skill-image").src = "/assets/images/lance.png";
 
   } else {
-    document.getElementById("o-skill").innerText = "Ride";
+    document.getElementById("pc-skill").title = "Ride";
+    document.getElementById("o-skill-image").src = "/assets/images/horse.png";
   }
 }
 
@@ -121,8 +128,8 @@ function opponentSkill(){
  * Speed > Shield
  */
 function compareSkill(){
-  let playerSkill = document.getElementById("p-skill").innerText;
-  let oppSkill = document.getElementById("o-skill").innerText;
+  let playerSkill = document.getElementById("player-skill").title;
+  let oppSkill = document.getElementById("pc-skill").title;
   
     //Draw
   if (playerSkill === oppSkill){ 
