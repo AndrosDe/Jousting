@@ -50,7 +50,7 @@
 - ### Design
   - #### Color Scheme
     - The color scheme is based on the painting of "Tjost" by Jörg Breu the Younger for Paulus Hector Mair
-      <h3><img src="/workspace/Jousting/assets/images/screenshots/paulus_hector_mair_tjost_fig2.jpg" height="213" width="512"></h3>
+      <h3><img src="assets/images/screenshots/paulus_hector_mair_tjost_fig2.jpg" height="213" width="512"></h3>
 
   - #### Typography
     - The 'Germania One' set up the tone of old german / old english
@@ -216,6 +216,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - The code for the countdown was copied from [codegrepper.com](https://www.codegrepper.com/code-examples/javascript/countdown+from+10+javascript).
 - [Stackoverflow.com](https://stackoverflow.com/questions/44263892/how-to-style-a-clicked-button-in-css) helped me in styling the buttons.
 - To get the animation running I used part of the code from [w3schools](https://www.w3schools.com/js/js_htmldom_animate.asp).
+- Help to change the HTML attribute with JavaScript was found on [w3schools](https://www.w3schools.com/js/js_htmldom_html.asp) as well.
 
 ### Content
 -  All English content was written by the developer.
