@@ -1,5 +1,5 @@
 // This script should only start once the DOM has finished loading
-/** The start-function gets all the buttons of the DOM and adds event listner to them
+/** The start-function gets all the buttons of the DOM and adds an event listener to them
  *  The respective functions are all called by clicking "Start".
  *  Clicking the other button will change the content on the user 
  */
@@ -58,7 +58,7 @@ function countdown() {
   
 // The Animation
 /**
- * Two knights charging another and clash in the middel of the screen
+ * Two knights charging another and clash in the middle of the screen
  */
 function playerMove() {
   document.getElementById("player").style.visibility = "visible";
@@ -100,7 +100,7 @@ document.getElementById("opponent").style.visibility = "visible";
 
 
 /**
- * Function to randomly create 0, 1 or 2 to choose the computer picked skill
+ * Function to randomly create 0, 1, or 2 to choose the computer picked skill
  * Function to set up an array of ["shield", "lance", "ride"] and assign them an index
  */
 function opponentSkill(){

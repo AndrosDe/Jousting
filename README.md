@@ -2,7 +2,7 @@
 <h2> Welcome </h2>
 
 <h3> 
-  This is the JavaScript based game: "Jousting".<br>The user has to select one of three Jousting-Skills within 5 seconds, before the knights clash. The opponent will create his skills randomly.<br>Depending on the outcome diffrent amount of points will be rewarded.
+  This is the JavaScript-based game: "Jousting".<br>The user has to select one of three Jousting-Skills within 5 seconds, before the knights' clash. The opponent will create his skills randomly.<br>Depending on the outcome different amount of points will be rewarded.
 <h3>
 
 <h2 align="center"><img src="#' height="500" width="900"></h2>
@@ -45,7 +45,7 @@
   1. The player needs to be able to easily navigate the site to find the game controls and buttons.
   2. The player needs to be able to easily find the information about the remaining time after pressing start.
   3. The visitor needs to be shown a clear message about the outcome.
-  4. The visitor needs to be able to to see the points scored.
+  4. The visitor needs to be able to see the points scored.
 
 - ### Design
   - #### Color Scheme
@@ -53,11 +53,11 @@
       <h3><img src="assets/images/screenshots/paulus_hector_mair_tjost_fig2.jpg" height="213" width="512"></h3>
 
   - #### Typography
-    - The 'Germania One' set up the tone of old german / old english
+    - The 'Germania One' set up the tone of old german / old English
     - As only a few instructions are given and the font is readable and clean, only this font is used on the site
 
   - #### Imagery
-    - Imagery is important, hence there is a main stage on which animated pictures will underline the countdown, making the game more interactive
+    - Imagery is important, hence there is the main stage on which animated pictures will underline the countdown, making the game more interactive
     - the skills are displayed by pictures to make it clearer and easier to use
 
 - ### Wireframe
@@ -74,13 +74,13 @@
 
   - #### Game Starter
     - The start button is central in the upper section of the page.
-    - A message above the start button provides clear instuctions.
+    - A message above the start button provides clear instructions.
     - Pressing the start button will call upon the JavaScript functions.
 
       <h3><img src="assets/images/screenshots/screenshot_start.png" height="70" width="400"></h3>
 
   - #### Selected Skill Section
-    - The skills hat have been choosen by the player and the JavaScript generated skills are displayed here to visually confirm and display the skills that are compared for the current round.
+    - The skills that have been chosen by the player and the JavaScript-generated skills are displayed here to visually confirm and display the skills that are compared for the current round.
 
       <h3><img src="assets/images/screenshots/screenshot_used_skill.png" height="90" width="400"></h3>
 
@@ -89,38 +89,38 @@
 
       <h3><img src="assets/images/screenshots/screenshot_animation.png" height="150" width="400"></h3>
   
-  - #### Coundown
+  - #### Countdown
     - Counting down for 5 seconds from "4" to "0".
     - When the countdown is at "0" a message about the result will be displayed.
 
       <h3><img src="assets/images/screenshots/screenshot_countdown.png" height="70" width="400"></h3>
 
   - #### Message
-    - A clear and roleplay appropriate message displays the result of the tjost.
-    - Depending on the skills used and if it has been a won, draw, lost or forfeit round will change the message.
+    - A clear and roleplay-appropriate message displays the result of the tjost.
+    - Depending on the skills used and if it has been a won, draw, lost, or forfeit round will change the message.
 
       <h3><img src="assets/images/screenshots/screenshot_message.png" height="70" width="700"></h3>
 
   - #### Skill Selection Section
-    - Three buttons are displaying the avaible options to the player.
+    - Three buttons display the available options to the player.
     - A short explanation above the buttons.
-    - A focused button will be set apart from the non-fcused buttons.
+    - A focused button will be set apart from the non-focused buttons.
 
       <h3><img src="assets/images/screenshots/screenshot_skill_selection.png" height="90" width="400"></h3>
 
   - #### Score Section
-    - The Score Section will display the gained score with: 
+    - The Score section will display the gained score with: 
       <br>1000 for a win.
       <br>500 for a draw.
       <br>50 for losing.
       <br> Not choosing any skill will be displayed as "forfeiting the round" and will give no points.
-    - Currently the score is reset back to 0 once the website is refreshed.
+    - Currently, the score is reset back to 0 once the website is refreshed.
 
       <h3><img src="assets/images/screenshots/screenshot_score.png" height="70" width="400"></h3>
 
 - ### Features Left to Implement
   - #### Login
-    - A Login option in order to use it in combination with a database to save the game score.
+    - A Login option to use it in combination with a database to save the game score.
   - #### Database
     - Adding a database to display and compare the score of the diffrent players.
 
@@ -143,7 +143,7 @@
   1. [Responsinator:](http://www.responsinator.com/) - Responsinator was used to review the website on different resolutions.
   1. [Grammarly:](https://app.grammarly.com/) - Grammarly was used for spell checking.
   1. [Notepad++:](https://notepad-plus-plus.org/) - Notepad++ for keeping notes for the project.
-  1. [ezGIF](https://ezgif.com/) - is an Online GIF maker and was used to make the animated pictures.
+  1. [ezGIF](https://ezgif.com/) - is an Online GIF maker and was used to make animated pictures.
   1. [lunapic](https://www9.lunapic.com/editor/) - is an online photo editor that helped me to remove the background from pictures.
 
 <hr>
@@ -165,7 +165,7 @@ The Lighthouse extention was used to validate the performance, accssesability, b
 - Friends and family members were asked to review the site:
   - The animation was well received.
   - The instructions are clear and easy to find.
-  - The game displayes the correct messagae.
+  - The game displays the correct message.
   - The score is added correctly.
 
 ### Further Testing
@@ -197,7 +197,7 @@ The project was deployed to GitHub Pages using the following steps...
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+2. At the top of the Repository (not top of page) just above the "Settings" button on the menu, locate the "Fork" button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
@@ -234,7 +234,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Code
 - The repository was created with the [Code Institute student template for Gitpod](https://github.com/Code-Institute-Org/gitpod-full-template).
 - The creation of the README was influenced by [Code Institute SampleREADME](https://github.com/Code-Institute-Solutions/SampleREADME) and [Kitchen Installation Bülau](https://github.com/AndrosDe/kitcheninstallation-buelau.
-- Some styling, layouts and JavaScript Code were influenced by the [Love Maths Walkthrough Project](https://github.com/AndrosDe/love-maths), however, in nearly all cases modifications had to be made to make it work correctly.
+- Some styling, layouts, and JavaScript codes were influenced by the [Love Maths Walkthrough Project](https://github.com/AndrosDe/love-maths), however, in nearly all cases modifications had to be made to make it work correctly.
 - The code for the countdown was copied from [codegrepper.com](https://www.codegrepper.com/code-examples/javascript/countdown+from+10+javascript).
 - [Stackoverflow.com](https://stackoverflow.com/questions/44263892/how-to-style-a-clicked-button-in-css) helped me in styling the buttons.
 - To get the animation running I used part of the code from [w3schools](https://www.w3schools.com/js/js_htmldom_animate.asp).
@@ -244,11 +244,11 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -  All English content was written by the developer.
 
 ### Media
-- The original pictures of the knights was created by studio4rt and taken from [www.freepik.com](https://www.freepik.com/free-vector/two-armed-knights-galloping-horseback-knighthood-medieval-tournament-ancient-warriors-with-peaks-shields-fighting-riding-horse_21852334.htm#query=jousting&position=22&from_view=search)
+- The original pictures of the knights were created by studio4rt and taken from [www.freepik.com](https://www.freepik.com/free-vector/two-armed-knights-galloping-horseback-knighthood-medieval-tournament-ancient-warriors-with-peaks-shields-fighting-riding-horse_21852334.htm#query=jousting&position=22&from_view=search)
 - The "VS" picture was created by jcomp and taken from [www.freepik.com](https://www.freepik.com/free-vector/versus-vs-letters-fight-flat-comics-style-design-with-halftone-lightning_13466740.htm#query=vs&position=2&from_view=search)
 - The "Clash" picture was created by brgfx and taken from [www.freepik.com](https://www.freepik.com/free-vector/word-crash-comic-cloud-explosion-background_16860053.htm#query=brgfx%20smash&position=7&from_view=search)
 - The "Horse" picture was created by macrovector and taken from [www.freepik.com](https://www.freepik.com/free-vector/medieval-knits-contest-cartoon-composition_6147503.htm#query=knight&position=22&from_view=search)
-- all other picturese were in the public domain, free of use and have been modified a lot by the developer in order to make them useful for this porject.
+- all other pictures were in the public domain, free of use, and have been modified a lot by the developer to make them useful for this project.
 
 ### Acknowledgements
 -  My Mentor Mr. Dario Carrasquel for continuous helpful feedback.
