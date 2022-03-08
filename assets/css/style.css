@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap"');
 
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: 'Germania One', sans-serif;
+}
+
 /* Global Style */
 body {
   background-color: white;
-  font-family: 'Germania One', sans-serif;
   text-align: center;
   font-size: 150%;
-}
-h1, h2 {
-    margin: 0;
 }
 h1 {
   font-size: 300%;
@@ -25,7 +29,7 @@ header, .score-section {
 /* Game Section */
 .game-section {
   background-color: #EBD2B6;
-  padding: 0;
+  padding: 0.2% 0;
   border: 10px solid #8A2F24;
 }
 .game-section h2 {
@@ -45,12 +49,7 @@ header, .score-section {
   background-repeat: no-repeat;
   background-position: center;
 }
-#player-skill {
-  background-image: none;
-}
-#pc-skill {
-  background-image: none;
-}
+
 #vs{
   background-image: url(../images/vs.png);
   background-size: 120%;
@@ -61,14 +60,14 @@ header, .score-section {
 /* Countdown */
 #countdown {
   margin-top: 1%;
-  font-size: 600%;
+  font-size: 400%;
   z-index: 10;
 }
 #message {
   position: absolute;
   width: 70%;
   left: 15%;
-  font-size: 375%;
+  font-size: 250%;
   z-index: 5;
   text-align: center;
   background-color: rgba(225, 235, 182, 0.7);
@@ -122,23 +121,22 @@ header, .score-section {
   }
 }
 
+.controls-area {
+  margin-top: 0.25%;
+}
+
 /* Buttons */
 .btn {
   margin: 0.25%;
   cursor: pointer;
 }
-.btn:active {
-  outline: none !important;
-}
-.btn:focus {
-  outline: none;
-}
+
 .btn--start{
   width: 109px;
   height: 50px;
   letter-spacing: 1.2px;
   text-align: center;
-  font-size: 200%;
+  font-size: 135%;
   background-color: #F2F2F2;
   padding: 0;
   border-top: 8px solid #CCCCCC;
@@ -149,7 +147,7 @@ header, .score-section {
   }
 .btn--start:active {
   letter-spacing: 1.1px;
-  font-size: 175%;
+  font-size: 115%;
   background-color: #DDDDDD;
   border-top: 8px solid #888888;
   border-left: 8px solid #888888;
@@ -212,10 +210,10 @@ header, .score-section {
 /* For screens smaller than 1000px */
 @media only screen and (max-width: 1000px) {
   #countdown {
-    font-size: 515%;
+    font-size: 360%;
   }
   #message {
-    font-size: 290%;
+    font-size: 220%;
   }
   .anima-section {
     margin-top: 0.2%;
@@ -241,10 +239,10 @@ header, .score-section {
 /* For screens smaller than 630px */
 @media only screen and (max-width: 630px) {
   #countdown {
-    font-size: 400%;
+    font-size: 300%;
   }
   #message {
-    font-size: 200%;
+    font-size: 150%;
   }
   .btn--big, .btn--skill, #vs{
     width: 150px;
@@ -265,11 +263,11 @@ header, .score-section {
     width: 80px;
     height: 38px;
     letter-spacing: 1px;
-    font-size: 120%;
+    font-size: 95%;
   }
   .btn--start:active {
     letter-spacing: 0.9px;
-    font-size: 95%;
+    font-size: 85%;
   }
   .btn--big, .btn--skill, #vs{
     width: 100px;
@@ -284,18 +282,18 @@ header, .score-section {
 /* For screens smaller than 540px */
 @media only screen and (max-width: 540px) {
   h3 {
-    font-size: 120%;
+    font-size: 100%;
     margin: 2%;
   }
   .btn--start{
     width: 80px;
     height: 38px;
     letter-spacing: 1px;
-    font-size: 120%;
+    font-size: 90%;
   }
   .btn--start:active {
     letter-spacing: 0.9px;
-    font-size: 95%;
+    font-size: 80%;
   }
   #player, #opponent {
     height: 80%;
@@ -390,10 +388,10 @@ header, .score-section {
     letter-spacing: 1px;
   }
   h2 {
-    font-size: 100%;
+    font-size: 90%;
   }
   h3 {
-    font-size: 90%;
+    font-size: 80%;
   }
   .game-section {
     border: 2px solid #8A2F24;
@@ -402,7 +400,7 @@ header, .score-section {
     width: 60px;
     height: 30px;
     letter-spacing: 0;
-    font-size: 100%;
+    font-size: 80%;
     left: 46.5%;
     border-top: 5px solid #CCCCCC;
     border-left: 5px solid #CCCCCC;
@@ -410,7 +408,7 @@ header, .score-section {
     border-right: 5px solid #888888;
   }
   .btn--start:active {
-    font-size: 75%;
+    font-size: 60%;
     border-top: 5px solid #888888;
     border-left: 5px solid #888888;
     border-bottom: 5px solid #CCCCCC;
@@ -444,13 +442,13 @@ header, .score-section {
 @media only screen and (max-height: 475px) {
   #used-skill1, #used-skill2, #used-skill3 {
     position: absolute;
-    top: 15%;
+    top: 18%;
   }
   #used-skill1 {
-    left: 35%;
+    left: 30%;
   }
   #used-skill2 {
-    right: 35%;
+    right: 30%;
   }
   #used-skill3 {
     left: 47%;
@@ -465,10 +463,10 @@ header, .score-section {
     background-position: 50% 70%;
   }
   #countdown {
-    font-size: 250%;
+    font-size: 140%;
   }
   #message {
-    font-size: 160%;
+    font-size: 100%;
   }
   .stage {
     bottom: 125%;
@@ -478,21 +476,21 @@ header, .score-section {
 /* For screens smaller than 395px */
 @media only screen and (max-width: 395px) {
   h3 {
-    font-size: 100%;
+    font-size: 80%;
   }
   .btn--start{
     width: 70px;
     height: 34px;
     letter-spacing: 0.8px;
-    font-size: 100%;
+    font-size: 75%;
   }
   .btn--start:active {
     letter-spacing: 0.7px;
-    font-size: 75%;
+    font-size: 65%;
   }
   #player, #opponent {
-    height: 60%;
-    width: 120%;
+    height: 80%;
+    width: 140%;
   }
   .btn--big, .btn--skill, #vs{
     width: 65px;
@@ -506,7 +504,7 @@ header, .score-section {
 /* For screens shorter than 375px */
 @media only screen and (max-height: 375px) {
   h1 {
-    font-size: 150%;
+    font-size: 115%;
     letter-spacing: 0.5px;
   }
   h3 {
@@ -525,11 +523,20 @@ header, .score-section {
   .anima-section {
     margin-top: 4%;
   }
+  #score {
+    font-size: 100%;
+  }
 }
 
 /* For screens smaller than 310px */
 @media only screen and (max-width: 310px) {
+  h2 {
+    font-size: 75%;
+  }
   h3 {
-    font-size: 85%;
+    font-size: 65%;
+  }
+  #score {
+    font-size: 100%;
   }
 }

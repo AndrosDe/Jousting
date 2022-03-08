@@ -10,6 +10,7 @@
     button.addEventListener("click", function(){
       if (this.getAttribute("data-type") === "shield") {
         document.getElementById("p-skill").innerText = "Shield";
+        document.getElementById("player-skill").style.backgroundImage = "url(../images/shield.png)";
 
       } else if (this.getAttribute("data-type") === "lance") {
         document.getElementById("p-skill").innerText = "Lance";
