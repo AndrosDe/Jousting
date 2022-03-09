@@ -202,112 +202,6 @@ header, .score-section {
 
 /* Media Queries */
 
-/* For screens smaller than 1000px */
-@media only screen and (max-width: 1000px) {
-  #countdown {
-    font-size: 360%;
-  }
-  #message {
-    font-size: 220%;
-  }
-  .anima-section {
-    margin-top: 0.2%;
-    height: 380px;
-  }
-  #clash {
-    height: 170px;
-    width: 148px;
-  }
-}
-
-/* For screens smaller than 630px */
-@media only screen and (max-width: 630px) {
-  #countdown {
-    font-size: 300%;
-  }
-  #message {
-    font-size: 150%;
-  }
-  .btn--big, .btn--skill, #vs{
-    width: 150px;
-    height: 150px;
-  }
-  .btn--big, .btn--skill {
-    border: 9px solid #8A2F24;
-  }
-}
-
-/* For screens smaller than 540px */
-@media only screen and (max-width: 540px) {
-  h3 {
-    font-size: 100%;
-    margin: 2%;
-  }
-  .btn--start{
-    width: 80px;
-    height: 38px;
-    letter-spacing: 1px;
-    font-size: 90%;
-  }
-  .btn--start:active {
-    letter-spacing: 0.9px;
-    font-size: 80%;
-  }
-  #player, #opponent {
-    height: 80%;
-    width: 150%;
-  }
-}
-
-/* For screens smaller than 500px */
-@media only screen and (max-width: 500px) {
-  .btn--big, .btn--skill, #vs{
-    width: 100px;
-    height: 100px;
-  }
-}
-
-/* For screens smaller than 395px */
-@media only screen and (max-width: 395px) {
-  h3 {
-    font-size: 80%;
-  }
-  .btn--start{
-    width: 70px;
-    height: 34px;
-    letter-spacing: 0.8px;
-    font-size: 75%;
-  }
-  .btn--start:active {
-    letter-spacing: 0.7px;
-    font-size: 65%;
-  }
-  #player, #opponent {
-    height: 80%;
-    width: 140%;
-  }
-  .btn--big, .btn--skill, #vs{
-    width: 65px;
-    height: 65px;
-  }
-  .btn--big, .btn--skill {
-    border: 5px solid #8A2F24;
-  }
-}
-
-/* For screens smaller than 310px */
-@media only screen and (max-width: 310px) {
-  h2 {
-    font-size: 75%;
-  }
-  h3 {
-    font-size: 65%;
-  }
-  #score {
-    font-size: 100%;
-  }
-}
-
 /* For screens shorter than 1250px */
 @media only screen and (max-height: 1250px) {
   .btn--big, .btn--skill, #vs{
@@ -344,53 +238,25 @@ header, .score-section {
   } 
 }
 
-/* For screens shorter than 800px */
-@media only screen and (max-height: 800px) {
-  h1 {
+/* For screens smaller than 1000px */
+@media only screen and (max-width: 1000px) {
+  #countdown {
     font-size: 250%;
-    letter-spacing: 4px;
-  }
-  h3 {
-    font-size: 120%;
-  }
-  #countdown {
-    font-size: 505%;
-  }
-  #message {
-    font-size: 290%;
-  }
-  .anima-section {
-    margin-top: 0.1%;
-    height: 255px;
-  }
-  #player, #opponent {
-    height: 100%;
-    width: 150%;
-  }
-  #countdown {
-    font-size: 300%;
-    margin-top: 0.2%;
-    background-color: rgba(225, 235, 182, 0.7);
-    padding: 0 0.5%;
   }
   #message {
     font-size: 160%;
   }
+  .anima-section {
+    height: 380px;
+  }
   #clash {
-    height: 105px;
-    width: 123px;
-    background-size: 65%;
-  }
-  .stage {
-    bottom: 18%;
-  }
-  #score {
-    padding-bottom: 0.1%;
+    height: 170px;
+    width: 148px;
   }
 }
 
-/* For screens shorter than 740px */
-@media only screen and (max-height: 740px) {
+/* For screens shorter than 540px */
+@media only screen and (max-height: 540px) {
   h1 {
     font-size: 190%;
     letter-spacing: 2px;
@@ -400,64 +266,6 @@ header, .score-section {
   }
   h3 {
     font-size: 100%;
-  }
-  .btn--start{
-  position: absolute;
-  left: 47%;
-  }
-  #used-skill1, #used-skill2, #used-skill3 {
-    position: absolute;
-    top: 18%;
-  }
-  #used-skill1 {
-    left: 30%;
-  }
-  #used-skill2 {
-    right: 30%;
-  }
-  #used-skill3 {
-    left: 47%;
-    top: 17%;
-  }
-  #vs{
-    margin-top: 45%;
-  }
-  .anima-section {
-    margin-top: 10%;
-  }
-  .btn--big, .btn--skill, #vs{
-    width: 85px;
-    height: 85px;
-  }
-  .btn--big, .btn--skill {
-    border: 7px solid #8A2F24;
-  }
-  .anima-section {
-    height: 210px;
-    background-position: 50% 58%;
-  }
-  #countdown {
-    font-size: 250%;
-  }
-  .stage {
-    bottom: 31%;
-  }
-  #score{
-    font-size: 90%;
-  }
-}
-
-/* For screens shorter than 575px */
-@media only screen and (max-height: 575px) {
-  h1 {
-    font-size: 170%;
-    letter-spacing: 1px;
-  }
-  h2 {
-    font-size: 90%;
-  }
-  h3 {
-    font-size: 80%;
   }
   .game-section {
     border: 2px solid #8A2F24;
@@ -471,6 +279,8 @@ header, .score-section {
     border-left: 5px solid #CCCCCC;
     border-bottom: 5px solid #888888;
     border-right: 5px solid #888888;
+    position: absolute;
+    left: 45%;
   }
   .btn--start:active {
     font-size: 60%;
@@ -486,7 +296,25 @@ header, .score-section {
   .btn--big, .btn--skill {
     border: 5px solid #8A2F24;
   }
+  #used-skill1, #used-skill2, #used-skill3 {
+    position: absolute;
+    top: 18%;
+  }
+  #used-skill1 {
+    left: 15%;
+  }
+  #used-skill2 {
+    right: 15%;
+  }
+  #used-skill3 {
+    left: 45%;
+    top: 17%;
+  }
+  #vs{
+    margin-top: 45%;
+  }
   .anima-section {
+    margin-top: 10%;
     height: 170px;
     background-position: 50% 65%;
   }
@@ -498,6 +326,40 @@ header, .score-section {
   }
   .stage {
     bottom: 47%;
+  }
+  #score{
+    font-size: 90%;
+  }
+}
+
+/* For screens smaller than 540px */
+@media only screen and (max-width: 540px) {
+  h3 {
+    font-size: 100%;
+    margin: 2%;
+  }
+  .btn--start{
+    width: 80px;
+    height: 38px;
+    letter-spacing: 1px;
+    font-size: 90%;
+    left: 43%;
+  }
+  .btn--start:active {
+    letter-spacing: 0.9px;
+    font-size: 80%;
+  }
+  #player, #opponent {
+    height: 80%;
+    width: 150%;
+  }
+}
+
+/* For screens smaller than 516px */
+@media only screen and (max-width: 516px) {
+  .btn--big, .btn--skill, #vs{
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -522,6 +384,34 @@ header, .score-section {
   }
 }
 
+/* For screens smaller than 395px */
+@media only screen and (max-width: 395px) {
+  h3 {
+    font-size: 80%;
+  }
+  .btn--start{
+    width: 70px;
+    height: 34px;
+    letter-spacing: 0.8px;
+    font-size: 75%;
+  }
+  .btn--start:active {
+    letter-spacing: 0.7px;
+    font-size: 65%;
+  }
+  #player, #opponent {
+    height: 80%;
+    width: 140%;
+  }
+  .btn--big, .btn--skill, #vs{
+    width: 65px;
+    height: 65px;
+  }
+  .btn--big, .btn--skill {
+    border: 5px solid #8A2F24;
+  }
+}
+
 /* For screens shorter than 375px */
 @media only screen and (max-height: 375px) {
   h1 {
@@ -532,10 +422,10 @@ header, .score-section {
     margin: 0.2%;
   }
   #used-skill1 {
-    left: 30%;
+    left: 15%;
   }
   #used-skill2 {
-    right: 30%;
+    right: 15%;
   }
   .btn--big, .btn--skill, #vs{
     width: 50px;
@@ -543,6 +433,19 @@ header, .score-section {
   }
   .anima-section {
     margin-top: 4%;
+  }
+  #score {
+    font-size: 100%;
+  }
+}
+
+/* For screens smaller than 310px */
+@media only screen and (max-width: 310px) {
+  h2 {
+    font-size: 75%;
+  }
+  h3 {
+    font-size: 65%;
   }
   #score {
     font-size: 100%;
