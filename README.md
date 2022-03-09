@@ -6,7 +6,8 @@
 <h3>
 
 <h2 align="center"><img src="assets/images/screenshots/readme_title_pic.jpg" height="500" width="900"></h2>
-[View the live project here.](https://androsde.github.io/Jousting/)
+
+[View the live project here](https://androsde.github.io/Jousting/)
 
 <hr>
 
@@ -174,7 +175,14 @@ The Lighthouse extention was used to validate the performance, accssesability, b
 -  A large amount of testing was done to ensure that all pages were linking correctly.
 
 ### Known Bugs
-- 
+- The "Start"-Button can be pressed again while the countdown is running.
+  This will cause the animation and countdown to start again / restart and looks a bit odd.
+  The intended use is to click "Start" once and wait until the countdown runs out.
+  When playing correctly this bug will not appear.
+
+- The "Skill"-Buttons can be clicked after the countdown is at "0" and the results have been displayed.
+  This will not change the results, it will just look odd as the player skill may not match the message.
+  The intended use is to select a skill before the countdown is at "0", selecting a skill after it his "0" is not part of the normal game play.
 
 <hr>
 
