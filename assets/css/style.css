@@ -240,6 +240,13 @@ header, .score-section {
 
 /* For screens smaller than 1000px */
 @media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 230%;
+    letter-spacing: 2px;
+  }
+  h2 {
+    font-size: 140%;
+  }
   #countdown {
     font-size: 250%;
   }
