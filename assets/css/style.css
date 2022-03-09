@@ -324,6 +324,13 @@ header, .score-section {
   #message {
     font-size: 110%;
   }
+  #player, #opponent {
+    height: 90%;
+  }
+  #clash {
+    height: 105px;
+    width: 85px;
+  }
   .stage {
     bottom: 47%;
   }
@@ -349,10 +356,6 @@ header, .score-section {
     letter-spacing: 0.9px;
     font-size: 80%;
   }
-  #player, #opponent {
-    height: 80%;
-    width: 150%;
-  }
 }
 
 /* For screens smaller than 516px */
@@ -365,6 +368,12 @@ header, .score-section {
 
 /* For screens shorter than 475px */
 @media only screen and (max-height: 475px) {
+  h3 {
+    font-size: 80%;
+  }
+  #used-skill1, #used-skill2, #used-skill3 {
+    top: 19%;
+  }
   #vs{
     visibility: hidden;
   }
@@ -380,14 +389,14 @@ header, .score-section {
     font-size: 100%;
   }
   .stage {
-    bottom: 115%;
+    bottom: 100%;
   }
 }
 
 /* For screens smaller than 395px */
 @media only screen and (max-width: 395px) {
   h3 {
-    font-size: 80%;
+    font-size: 75%;
   }
   .btn--start{
     width: 70px;
@@ -399,10 +408,6 @@ header, .score-section {
     letter-spacing: 0.7px;
     font-size: 65%;
   }
-  #player, #opponent {
-    height: 80%;
-    width: 140%;
-  }
   .btn--big, .btn--skill, #vs{
     width: 65px;
     height: 65px;
@@ -412,8 +417,8 @@ header, .score-section {
   }
 }
 
-/* For screens shorter than 375px */
-@media only screen and (max-height: 375px) {
+/* For screens shorter than 405px */
+@media only screen and (max-height: 405px) {
   h1 {
     font-size: 115%;
     letter-spacing: 0.5px;
@@ -432,7 +437,7 @@ header, .score-section {
     height: 50px;
   }
   .anima-section {
-    margin-top: 4%;
+    margin-top: 10%;
   }
   #score {
     font-size: 100%;

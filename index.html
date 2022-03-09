@@ -20,72 +20,70 @@
 
   <!-- Main Game section-->
     <section class="game-section">
-    <h3>Press "Start" to begin the countdown!</h3>
-    <!-- Start Game Button-->
-    <div id="game-starter"> 
-      <button data-type="start" class="btn btn--start">
-        Start
-      </button>
-    </div>
-    <div>
-      <!-- Used Skills -->
-      <!-- Your selected Skill-->
-      <div class="used-skills" id="used-skill1">
-        <h3> You </h3>
-        <div class="btn--skill" id="player-skill" title="Null">
-          <img id="p-skill-image" src="assets/images/placeholder.png">
-        </div>
+      <h3>Press "Start" to begin the countdown!</h3>
+      <!-- Start Game Button-->
+      <div id="game-starter"> 
+        <button data-type="start" class="btn btn--start">Start</button>
       </div>
-
-      <div class="used-skills" id="used-skill3">
-        <div id="vs">
-        </div>
-      </div>
-
-      <!-- Computer selected skill-->
-      <div class="used-skills" id="used-skill2">
-        <h3> Opponent </h3>
-        <div class="btn--skill" id="pc-skill" title="Null">
-          <img id="o-skill-image" src="assets/images/placeholder.png">
-        </div>
-      </div>
-
-      <!-- Main Stage-->
-      <div class="anima-section">
-      <!-- Countdown-->
-        <div>
-          <h2 id="countdown">4</h2>
+      <div>
+        <!-- Used Skills -->
+        <!-- Your selected Skill-->
+        <div class="used-skills" id="used-skill1">
+          <h3> You </h3>
+          <div class="btn--skill" id="player-skill" title="Null">
+            <img id="p-skill-image" src="assets/images/placeholder.png">
+          </div>
         </div>
 
-        <!-- Message -->
-        <h2 id="message">Woohoo!</h2>
+        <div class="used-skills" id="used-skill3">
+          <div id="vs">
+          </div>
+        </div>
+
+        <!-- Computer selected skill-->
+        <div class="used-skills" id="used-skill2">
+          <h3> Opponent </h3>
+          <div class="btn--skill" id="pc-skill" title="Null">
+            <img id="o-skill-image" src="assets/images/placeholder.png">
+          </div>
+        </div>
+
+        <!-- Main Stage-->
+        <div class="anima-section">
+          <!-- Countdown-->
+          <div>
+            <h2 id="countdown">4</h2>
+          </div>
+
+          <!-- Message -->
+          <h2 id="message">Woohoo!</h2>
         
-        <!-- Running Animation-->
-        <div class="stage">
-          <!-- Knight 1-->
-          <div id="player"></div>
-          <!-- Middel Collision-->
-          <div id="clash"></div>
-          <!-- Knight 2-->
-          <div id="opponent"></div>
+          <!-- Running Animation-->
+          <div class="stage">
+            <!-- Knight 1-->
+            <div id="player"></div>
+            <!-- Middel Collision-->
+            <div id="clash"></div>
+            <!-- Knight 2-->
+            <div id="opponent"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Skill-List-->
-    <div class="controls-area">
-      <h3>Choose your skill before the countdown hits zero!</h3>
-      <button data-type="shield" class="btn btn--big btn--shield"></button>
-      <button data-type="lance" class="btn btn--big btn--lance"></button>
-      <button data-type="ride" class="btn btn--big btn--ride"></button>
-    </div>
+      <!-- Skill-List-->
+      <div class="controls-area">
+        <h3>Choose your skill before the countdown hits zero!</h3>
+        <button data-type="shield" class="btn btn--big btn--shield"></button>
+        <button data-type="lance" class="btn btn--big btn--lance"></button>
+        <button data-type="ride" class="btn btn--big btn--ride"></button>
+      </div>
     </section>
 
-  <!-- Score section-->
+    <!-- Score section-->
     <section class="score-section">
-    <h2>Score:</h2>
-    <div>
-      <p><span id="score">0</span> Points</p>
-    </div>
+      <h2>Score:</h2>
+      <div>
+        <p><span id="score">0</span> Points</p>
+      </div>
     </section>
 
     <script src="assets/js/script.js"></script>
