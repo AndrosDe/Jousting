@@ -5,8 +5,8 @@
   This is the JavaScript-based game: "Jousting".<br>The user has to select one of three Jousting-Skills within 5 seconds, before the knights' clash. The opponent will create his skills randomly.<br>Depending on the outcome different amount of points will be rewarded.
 <h3>
 
-<h2 align="center"><img src="#' height="500" width="900"></h2>
-[View the live project here.](#)
+<h2 align="center"><img src="assets/images/screenshots/readme_title_pic.jpg" height="500" width="900"></h2>
+[View the live project here.](https://androsde.github.io/Jousting/)
 
 <hr>
 
@@ -157,9 +157,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 The Lighthouse extention was used to validate the performance, accssesability, best pratices and SEO of the project
 -   [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
     - Desktop
-      <h3><img src="#" height="70" width="700"></h3>
+      <h3><img src="assets/images/screenshots/lighthouse_desktop.png" height="70" width="700"></h3>
     - Mobile
-      <h3><img src="#" height="70" width="700"></h3>
+      <h3><img src="assets/images/screenshots/lighthouse_mobile.png" height="70" width="700"></h3>
 
 ### Testing the User Experience (UX)
 - Friends and family members were asked to review the site:
@@ -244,11 +244,12 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 -  All English content was written by the developer.
 
 ### Media
-- The original pictures of the knights were created by studio4rt and taken from [www.freepik.com](https://www.freepik.com/free-vector/two-armed-knights-galloping-horseback-knighthood-medieval-tournament-ancient-warriors-with-peaks-shields-fighting-riding-horse_21852334.htm#query=jousting&position=22&from_view=search)
-- The "VS" picture was created by jcomp and taken from [www.freepik.com](https://www.freepik.com/free-vector/versus-vs-letters-fight-flat-comics-style-design-with-halftone-lightning_13466740.htm#query=vs&position=2&from_view=search)
-- The "Clash" picture was created by brgfx and taken from [www.freepik.com](https://www.freepik.com/free-vector/word-crash-comic-cloud-explosion-background_16860053.htm#query=brgfx%20smash&position=7&from_view=search)
-- The "Horse" picture was created by macrovector and taken from [www.freepik.com](https://www.freepik.com/free-vector/medieval-knits-contest-cartoon-composition_6147503.htm#query=knight&position=22&from_view=search)
-- all other pictures were in the public domain, free of use, and have been modified a lot by the developer to make them useful for this project.
+- The original pictures of the knights were created by studio4rt and taken from [www.freepik.com](https://www.freepik.com/free-vector/two-armed-knights-galloping-horseback-knighthood-medieval-tournament-ancient-warriors-with-peaks-shields-fighting-riding-horse_21852334.htm#query=jousting&position=22&from_view=search).
+- The "VS" picture was created by jcomp and taken from [www.freepik.com](https://www.freepik.com/free-vector/versus-vs-letters-fight-flat-comics-style-design-with-halftone-lightning_13466740.htm#query=vs&position=2&from_view=search).
+- The "Clash" picture was created by brgfx and taken from [www.freepik.com](https://www.freepik.com/free-vector/word-crash-comic-cloud-explosion-background_16860053.htm#query=brgfx%20smash&position=7&from_view=search).
+- The "Horse" picture was created by macrovector and taken from [www.freepik.com](https://www.freepik.com/free-vector/medieval-knits-contest-cartoon-composition_6147503.htm#query=knight&position=22&from_view=search).
+- The "knight" icon was designed by pikisuperstar / Freepik [www.freepik.com](https://www.freepik.com).
+- All other pictures are in the public domain, free of use, and have been modified a lot by the developer to make them useful for this project.
 
 ### Acknowledgements
 -  My Mentor Mr. Dario Carrasquel for continuous helpful feedback.
