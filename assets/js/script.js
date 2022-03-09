@@ -10,15 +10,15 @@
     button.addEventListener("click", function(){
       if (this.getAttribute("data-type") === "shield") {
         document.getElementById("player-skill").title = "Shield";
-        document.getElementById("p-skill-image").src = "/assets/images/shield.png";
+        document.getElementById("p-skill-image").src = "assets/images/shield.png";
 
       } else if (this.getAttribute("data-type") === "lance") {
         document.getElementById("player-skill").title = "Lance";
-        document.getElementById("p-skill-image").src = "/assets/images/lance.png";
+        document.getElementById("p-skill-image").src = "assets/images/lance.png";
 
       } else if (this.getAttribute("data-type") === "ride") {
         document.getElementById("player-skill").title = "Ride";
-        document.getElementById("p-skill-image").src = "/assets/images/horse.png";
+        document.getElementById("p-skill-image").src = "assets/images/horse.png";
 
       } else {
         document.getElementById("countdown").innerHTML = 4;
@@ -26,8 +26,8 @@
         document.getElementById("message").style = "";
         document.getElementById("player-skill").title = "Null";
         document.getElementById("pc-skill").title = "Null";
-        document.getElementById("p-skill-image").src = "/assets/images/placeholder.png";
-        document.getElementById("o-skill-image").src = "/assets/images/placeholder.png";
+        document.getElementById("p-skill-image").src = "assets/images/placeholder.png";
+        document.getElementById("o-skill-image").src = "assets/images/placeholder.png";
         countdown();
         playerMove();
         opponentMove();
@@ -109,15 +109,15 @@ function opponentSkill(){
 
   if (skills.indexOf("shield") === num ){
     document.getElementById("pc-skill").title = "Shield";
-    document.getElementById("o-skill-image").src = "/assets/images/shield.png";
+    document.getElementById("o-skill-image").src = "assets/images/shield.png";
 
   } else if (skills.indexOf("lance") === num ){
     document.getElementById("pc-skill").title = "Lance";
-    document.getElementById("o-skill-image").src = "/assets/images/lance.png";
+    document.getElementById("o-skill-image").src = "assets/images/lance.png";
 
   } else {
     document.getElementById("pc-skill").title = "Ride";
-    document.getElementById("o-skill-image").src = "/assets/images/horse.png";
+    document.getElementById("o-skill-image").src = "assets/images/horse.png";
   }
 }
 
