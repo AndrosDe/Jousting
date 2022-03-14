@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */
+// This is for jshint to stop displaying the warnings when i use "let
+
 // This script should only start once the DOM has finished loading
 /** The start-function gets all the buttons of the DOM and adds an event listener to them
  *  The respective functions are all called by clicking "Start".
@@ -13,16 +16,27 @@
         document.getElementById("player-skill").title = "Shield";
         document.getElementById("p-skill-image").src = "assets/images/shield.png";
         document.getElementById("p-skill-image").alt = "Blocking with your shield.";
+
         // If the player clicks the button with the lance, the immage of the lance is displayed in the "Used Skill" section and the "title" and "alt" discription are set accordingly.
       } else if (this.getAttribute("data-type") === "lance") {
         document.getElementById("player-skill").title = "Lance";
         document.getElementById("p-skill-image").src = "assets/images/lance.png";
         document.getElementById("p-skill-image").alt = "Attacking with your lance.";
+
         // If the player clicks the button with the horse, the immage of the horse is displayed in the "Used Skill" section and the "title" and "alt" discription are set to "ride".
       } else if (this.getAttribute("data-type") === "ride") {
         document.getElementById("player-skill").title = "Ride";
         document.getElementById("p-skill-image").src = "assets/images/horse.png";
         document.getElementById("p-skill-image").alt = "Swift and nimble riding.";
+
+        // If the player wants to reset the "score"
+      } else if (this.getAttribute("data-type") === "reset") {
+        resetScore()
+
+        // If the player wants read the instucktions
+      } else if (this.getAttribute("data-type") === "instructions") {
+        instructions()
+
         /** The only other button on the webpage is "start".
          *  Clicking start will first reset the animation, the coundown and the display and all other changes from the previous round in the game-section.
          */ 
@@ -225,13 +239,13 @@ function loseScore() {
 
 // Resetting the score back to zero
 function resetScore() {
-  postMessage("Resetting the Score to 0")
+  alert("Resetting the Score to 0")
   document.getElementById("score").innerText = 0;
 }
 
 //Instructions
 function instructions() {
-  postMessage(
+  alert(
     'Welcome to Jousting!\n'
     + '\n'
     + 'To start the game please press the "Start-Button".\n'
@@ -239,10 +253,12 @@ function instructions() {
     + 'Once the "Start-Button" is pressed you have 5 seconds to select on of the 3 Skills below.\n'
     + 'When the Countdown hits "0" your last selected Skill,before the timer ran out will be compared to the computer generated timer.\n'
     + '\n'
+    + 'Game Rules:\n'
     + 'A shield will block a lance.\n'
     + 'An attack with the lance will beat an unshielded opponent.\n'
     + 'Nimbleness will help to bypass a shield.\n'
     + '\n'
+    + 'Award Rules:\n'
     + 'You will get 1000 points for a win.\n'
     + 'A draw will give you 500 points.\n'
     + 'Losing a round will give you 50 points.\n'

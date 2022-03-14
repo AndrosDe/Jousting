@@ -25,6 +25,10 @@ header, .score-section {
   color: #FFFFFF;
   padding: 0.15%;
 }
+header {
+  display: inline-block;
+  width: 100%;
+}
 
 /* Game Section */
 .game-section {
@@ -128,7 +132,6 @@ header, .score-section {
   margin: 0.25%;
   cursor: pointer;
 }
-
 .btn--start{
   width: 109px;
   height: 50px;
@@ -168,6 +171,25 @@ header, .score-section {
 }
 .btn--big:focus {
   background-color: #CCCCCC;
+}
+.btn--small {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #F2F2F2;
+  border: 3px solid #000;
+  margin-top: 1%;
+  position: relative;
+}
+.btn--help {
+  float: right;
+  top: 1%;
+  right: 25%;
+}
+.btn--reset {
+  float: left;
+  top: 1%;
+  left: 25%;
 }
 .btn--shield {
   background-image: url(../images/shield.png);
@@ -266,6 +288,12 @@ header, .score-section {
   #clash {
     height: 170px;
     width: 148px;
+  }
+  .btn--help {
+    right: 20%;
+  }
+  .btn--reset {
+    left: 20%;
   }
 }
 
@@ -370,6 +398,12 @@ header, .score-section {
     letter-spacing: 0.9px;
     font-size: 80%;
   }
+  .btn--help {
+    right: 10%;
+  }
+  .btn--reset {
+    left: 10%;
+  }
 }
 
 /* For screens smaller than 516px */
@@ -378,10 +412,20 @@ header, .score-section {
     width: 100px;
     height: 100px;
   }
+  #player, #opponent {
+    height: 80%;
+    width: 180%;
+  }
 }
 
 /* For screens shorter than 475px */
 @media only screen and (max-height: 475px) {
+  .btn--help {
+    right: 5%;
+  }
+  .btn--reset {
+    left: 5%;
+  }
   h3, #starth2 {
     font-size: 80%;
   }
@@ -409,8 +453,19 @@ header, .score-section {
 
 /* For screens smaller than 395px */
 @media only screen and (max-width: 395px) {
+  .btn--help {
+    right: 1%;
+  }
+  .btn--reset {
+    left: 1%;
+  }
   h3, #starth2 {
     font-size: 75%;
+  }
+  #player, #opponent {
+    height: 58%;
+    width: 158%;
+    bottom: 10%;
   }
   .btn--start{
     width: 70px;
@@ -460,11 +515,18 @@ header, .score-section {
 
 /* For screens smaller than 310px */
 @media only screen and (max-width: 310px) {
+  h1 {
+    font-size: 190%;
+  }
   h2 {
     font-size: 75%;
   }
   h3, #starth2 {
     font-size: 65%;
+  }
+  #player, #opponent {
+    height: 45%;
+    width: 145%;
   }
   #score {
     font-size: 100%;
