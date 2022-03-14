@@ -223,6 +223,7 @@ function loseScore() {
   document.getElementById("score").innerText = oldScore + 50;
 }
 
+// Resetting the score back to zero
 function resetScore() {
   postMessage("Resetting the Score to 0")
   document.getElementById("score").innerText = 0;
