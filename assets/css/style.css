@@ -226,8 +226,7 @@ header {
   position: absolute;
   right: 44%;
   top: 10%;
-  background-color: rgba(225, 235, 182, 0.7);
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 /* Score Section */
