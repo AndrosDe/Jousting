@@ -263,8 +263,8 @@ header {
   } 
 }
 
-/* For screens smaller than 1000px */
-@media only screen and (max-width: 1000px) {
+/* For screens smaller than 1024px */
+@media only screen and (max-width: 1024px) {
   h1 {
     font-size: 230%;
     letter-spacing: 2px;
@@ -294,6 +294,14 @@ header {
   }
   .btn--reset {
     left: 20%;
+  }
+}
+
+/* For screens shorter than 770px */
+@media only screen and (max-height: 770px) {
+  .btn--big, .btn--skill, #vs{
+    width: 85px;
+    height: 85px;
   }
 }
 
@@ -337,6 +345,11 @@ header {
   }
   .btn--big, .btn--skill {
     border: 5px solid #8A2F24;
+  }
+  .btn--small {
+    width: 40px;
+    height: 40px;
+    font-size: 45%;
   }
   #used-skill1, #used-skill2, #used-skill3 {
     position: absolute;
@@ -383,6 +396,10 @@ header {
 
 /* For screens smaller than 540px */
 @media only screen and (max-width: 540px) {
+  h1 {
+    font-size: 210%;
+    letter-spacing: 2px;
+  }
   h3, #starth2 {
     font-size: 100%;
     margin: 2%;
@@ -408,6 +425,9 @@ header {
 
 /* For screens smaller than 516px */
 @media only screen and (max-width: 516px) {
+  h1 {
+    font-size: 190%;
+  }
   .btn--big, .btn--skill, #vs{
     width: 100px;
     height: 100px;
@@ -504,6 +524,11 @@ header {
   .btn--big, .btn--skill, #vs{
     width: 50px;
     height: 50px;
+  }
+  .btn--small {
+    width: 30px;
+    height: 30px;
+    font-size: 36%;
   }
   .anima-section {
     margin-top: 10%;
