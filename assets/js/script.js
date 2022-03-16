@@ -31,14 +31,14 @@
 
         // If the player wants to reset the "score"
       } else if (this.getAttribute("data-type") === "reset") {
-        resetScore()
+        resetScore();
 
         // If the player wants read the instucktions
       } else if (this.getAttribute("data-type") === "instructions") {
-        instructions()
+        instructions();
 
         /** The only other button on the webpage is "start".
-         *  Clicking start will first reset the animation, the coundown and the display and all other changes from the previous round in the game-section.
+         *  Clicking start will first reset the animation, the countdown, the display, and all other changes from the previous round in the game section.
          */ 
       } else {
         document.getElementById("btn--big--block").style.visibility = "hidden"; // This will remove the div-block from the skill buttons
@@ -254,24 +254,6 @@ function resetScore() {
 //Instructions
 function instructions() {
   alert(
-    'Welcome to Jousting!\n'
-    + '\n'
-    + 'To start the game please press the "Start-Button".\n'
-    + '\n'
-    + 'Once the "Start-Button" is pressed you have 5 seconds to select on of the 3 Skills below.\n'
-    + 'When the Countdown hits "0" your last selected Skill,before the timer ran out will be compared to the computer generated timer.\n'
-    + '\n'
-    + 'Game Rules:\n'
-    + ' -> A shield will block a lance.\n'
-    + ' -> An attack with the lance will beat an unshielded opponent.\n'
-    + ' -> Nimbleness will help to bypass a shield.\n'
-    + '\n'
-    + 'Award Rules:\n'
-    + ' -> You will get 1000 points for a win.\n'
-    + ' -> A draw will give you 500 points.\n'
-    + ' -> Losing a round will give you 50 points.\n'
-    + ' -> Not choosing any skill, by not pressing any button before the countdown hits "0" will award no points.\n'
-    + '\n'
-    + 'Best of luck to you and have fun!'
-  );
+    'Welcome to Jousting!\n\nTo start the game please press the "Start-Button".\n\nOnce the "Start-Button" is pressed you have 5 seconds to select on of the 3 Skills below.\nWhen the Countdown hits "0" your last selected Skill,before the timer ran out will be compared to the computer generated timer.\n\nGame Rules:\n-> A shield will block a lance.\n-> An attack with the lance will beat an unshielded opponent.\n-> Nimbleness will help to bypass a shield.\n\nAward Rules:\n-> You will get 1000 points for a win.\n-> A draw will give you 500 points.\n-> Losing a round will give you 50 points.\n-> Not choosing any skill, by not pressing any button before the countdown hits "0" will award no points.\n\nBest of luck to you and have fun!'
+  ); //Hard to read here in the code but using the "+" to add the text together will cause a warning in JShint, hence to please Jshint I wrote the message in one line
 }

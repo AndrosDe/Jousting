@@ -26,7 +26,6 @@
 - ### [Testing](#testing-1)
   - [Testing the User Experience (UX)](#user-experience-ux)
   - [Further Testing](#further-testing)
-  - [Known Bugs](#known-bugs)
 - ### [Deployment](#deployment-1)
   - [GitHub Pages](#github-pages)
   - [Forking the GitHub Repository](#forking-the-github-repository)
@@ -74,13 +73,13 @@
       <h3><img src="assets/images/screenshots/screenshot_heading.png" height="70" width="700"></h3>
 
   - #### Help-Button
-    - Information about how to play the game, the game rules and how the points are awarded ca be found here.
+    - Information about how to play the game, the game rules, and how the points are awarded can be found here.
 
       <h3><img src="assets/images/screenshots/screenshot_help.png" height="70" width="260"></h3>
   
   - #### "Reset Score"-Button
-    - If a player wishes to reset the score back to "0", it can be doen in two ways:
-    1. Refresh the webside.
+    - If a player wishes to reset the score back to "0", it can be done in two ways:
+    1. Refresh the website.
     2. Use the "Reset Score"-Button and confirm the pop-up window.
         <h3><img src="assets/images/screenshots/screenshot_reset.png" height="70" width="260"></h3>
 
@@ -126,9 +125,13 @@
       <br>500 for a draw.
       <br>50 for losing.
       <br> Not choosing any skill will be displayed as "forfeiting the round" and will give no points.
-    - Currently, the score is reset back to 0 once the website is refreshed.
-
+    
       <h3><img src="assets/images/screenshots/screenshot_score.png" height="70" width="400"></h3>
+  
+  - #### Button Blocker
+    - The Game Starter will be blocked once the button is clicked and unblock when the countdown is at "0".
+    - likewise, the Skill Selection Section is blocked and will unblock when the game is started, it will block again when the countdown is at "0".
+
 
 - ### Features Left to Implement
   - #### Login
@@ -137,7 +140,6 @@
     - Adding a database to display and compare the score of the diffrent players.
   - #### Help-Section
     - A bigger Alert-Box for the "Help" section.
-
 <hr>
 
 ## Technologies Used
@@ -253,7 +255,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - [Stackoverflow.com](https://stackoverflow.com/questions/44263892/how-to-style-a-clicked-button-in-css) helped me in styling the buttons.
 - To get the animation running I used part of the code from [w3schools](https://www.w3schools.com/js/js_htmldom_animate.asp).
 - Help to change the HTML attribute with JavaScript was found on [w3schools](https://www.w3schools.com/js/js_htmldom_html.asp) as well.
-- The confim-box function was done with help of [bitdegree.org](https://www.bitdegree.org/learn/javascript-alert).
+- The confirm-box function was done with help of [bitdegree.org](https://www.bitdegree.org/learn/javascript-alert).
 
 ### Content
 -  All English content was written by the developer.
