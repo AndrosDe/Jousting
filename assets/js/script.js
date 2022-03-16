@@ -41,6 +41,7 @@
          *  Clicking start will first reset the animation, the coundown and the display and all other changes from the previous round in the game-section.
          */ 
       } else {
+        document.getElementById("btn--big--block").style.visibility = "hidden"; // This will remove the div-block from the skill buttons
         document.getElementById("btn--start--block").style.visibility = "visible"; // This will push an div-block in front of the start button
         document.getElementById("countdown").innerHTML = 4; // This resets the coundown back to "4"
         document.getElementById("clash").style = ""; // This removes the "clash.webp" of the previous round from the webpage
@@ -75,9 +76,11 @@ function countdown() {
       document.getElementById("clash").style.animationName = "clash-zoom";
       document.getElementById("clash").style.animationDuration = "1s";
       document.getElementById("clash").style.animationFillMode = "forwards";
-      // Finally two function are called upon once the countdown hits "0":
+      // Since the choice to select a skill has to be made before the countdown is at 0, the buttons will now be blocked
+      document.getElementById("btn--big--block").style.visibility = "visible";
+      // Two function are called upon once the countdown hits "0":
       opponentSkill(); // This will creat a skill randomly.
-      compareSkill(); // this will compare the above generated skill with the selected skill of the player
+      compareSkill(); // This will compare the above generated skill with the selected skill of the player
       // To make the startbutton clickable again:
       document.getElementById("btn--start--block").style.visibility = "hidden";
     }

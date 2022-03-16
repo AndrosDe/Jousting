@@ -228,6 +228,14 @@ header {
   top: 10%;
   visibility: hidden;
 }
+#btn--big--block {
+  width: 66%;
+  height: 25%;
+  position: absolute;
+  right: 18.5%;
+  top: 66%;
+  visibility: visible;
+}
 
 /* Score Section */
 #score {
@@ -277,6 +285,9 @@ header {
   #btn--start--block {
     top: 22%;
   }
+  #btn--big--block {
+    top: 70%;
+  }
 }
 
 /* For screens smaller than 1024px */
@@ -317,6 +328,13 @@ header {
   }
 }
 
+/* For screens shorter than 900px */
+@media only screen and (max-height: 900px) {
+  #btn--big--block {
+    top: 84%;
+  }
+}
+
 /* For screens shorter than 770px */
 @media only screen and (max-height: 770px) {
   .btn--big, .btn--skill, #vs{
@@ -326,6 +344,30 @@ header {
   #btn--start--block {
     right: 35%;
     top: 18%;
+  }
+  #btn--big--block {
+    top: 98%;
+  }
+}
+
+/* For screens shorter than 690px */
+@media only screen and (max-height: 690px) {
+  #btn--big--block {
+    top: 110%;
+  }
+}
+
+/* For screens shorter than 610px */
+@media only screen and (max-height: 610px) {
+  #btn--big--block {
+    top: 120%;
+  }
+}
+
+/* For screens shorter than 570px */
+@media only screen and (max-height: 570px) {
+  #btn--big--block {
+    top: 130%;
   }
 }
 
@@ -423,6 +465,9 @@ header {
     top: 17%;
     z-index: 10;
   }
+  #btn--big--block {
+    top: 75%;
+  }
 }
 
 /* For screens smaller than 540px */
@@ -510,6 +555,9 @@ header {
   .stage {
     bottom: 100%;
   }
+  #btn--big--block {
+    top: 65%;
+  }
 }
 
 /* For screens smaller than 395px */
@@ -581,6 +629,16 @@ header {
   }
   #score {
     font-size: 100%;
+  }
+  #btn--big--block {
+    top: 75%;
+  }
+}
+
+/* For screens smaller than 348px */
+@media only screen and (max-height: 348px) {
+  #btn--big--block {
+    top: 85%;
   }
 }
 
