@@ -1,5 +1,5 @@
+// This is for jshint to stop displaying the warnings when i use "let"
 /*jshint esversion: 6 */
-// This is for jshint to stop displaying the warnings when i use "let
 
 // This script should only start once the DOM has finished loading
 /** The start-function gets all the buttons of the DOM and adds an event listener to them
@@ -28,11 +28,9 @@
         document.getElementById("player-skill").title = "Ride";
         document.getElementById("p-skill-image").src = "assets/images/horse.png";
         document.getElementById("p-skill-image").alt = "Swift and nimble riding.";
-
         // If the player wants to reset the "score"
       } else if (this.getAttribute("data-type") === "reset") {
         resetScore();
-
         // If the player wants read the instucktions
       } else if (this.getAttribute("data-type") === "instructions") {
         instructions();
@@ -227,17 +225,14 @@ function compareSkill(){
  * 50 for participation (due to the high randomness and chance to fail by bad luck)
  * Only not choosing any skill will award no points
  */
-
 function winScore() {
   let oldScore = parseInt(document.getElementById("score").innerText);
   document.getElementById("score").innerText = oldScore + 1000;
 }
-
 function drawScore() {
   let oldScore = parseInt(document.getElementById("score").innerText);
   document.getElementById("score").innerText = oldScore + 500;
 }
-
 function loseScore() {
   let oldScore = parseInt(document.getElementById("score").innerText);
   document.getElementById("score").innerText = oldScore + 50;
