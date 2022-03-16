@@ -41,6 +41,7 @@
          *  Clicking start will first reset the animation, the coundown and the display and all other changes from the previous round in the game-section.
          */ 
       } else {
+        document.getElementById("btn--start--block").style.visibility = "visible";
         document.getElementById("countdown").innerHTML = 4; // This resets the coundown back to "4"
         document.getElementById("clash").style = ""; // This removes the "clash.webp" of the previous round from the webpage
         document.getElementById("message").style = ""; // This removes the "message" from the last round
@@ -69,7 +70,7 @@ function countdown() {
     // When the countdown hits "0", the countdown is stopped.
     if(countdown <= 0) {
       clearInterval(x);
-      // Also when the countdown hits "0" the  clash-image is shown and animated
+      // Also when the countdown hits "0" the clash-image is shown and animated
       document.getElementById("clash").style.visibility = "visible";
       document.getElementById("clash").style.animationName = "clash-zoom";
       document.getElementById("clash").style.animationDuration = "1s";
@@ -77,6 +78,7 @@ function countdown() {
       // Finally two function are called upon once the countdown hits "0":
       opponentSkill(); // This will creat a skill randomly.
       compareSkill(); // this will compare the above generated skill with the selected skill of the player
+      //document.getElementById("btn--start--block").style.visibility = "hidden";
     }
   document.getElementById("countdown").innerHTML = 0 + countdown;
   countdown -= 1;
@@ -237,10 +239,12 @@ function loseScore() {
   document.getElementById("score").innerText = oldScore + 50;
 }
 
-// Resetting the score back to zero
+// Resetting the score back to zero when confiming with "ok".
 function resetScore() {
-  alert("Resetting the Score to 0")
-  document.getElementById("score").innerText = 0;
+  let r = confirm("Resetting the Score to 0");
+  if (r == true) {
+    document.getElementById("score").innerText = 0;
+  }
 }
 
 //Instructions
@@ -265,5 +269,5 @@ function instructions() {
     + 'Not choosing any skill, by not pressing any button before the countdown hits "0" will award no points.\n'
     + '\n'
     + 'Best of luck to you and have fun!'
-  )
+  );
 }

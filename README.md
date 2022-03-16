@@ -247,6 +247,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - [Stackoverflow.com](https://stackoverflow.com/questions/44263892/how-to-style-a-clicked-button-in-css) helped me in styling the buttons.
 - To get the animation running I used part of the code from [w3schools](https://www.w3schools.com/js/js_htmldom_animate.asp).
 - Help to change the HTML attribute with JavaScript was found on [w3schools](https://www.w3schools.com/js/js_htmldom_html.asp) as well.
+- The confim-box function was done with help of [bitdegree.org](https://www.bitdegree.org/learn/javascript-alert).
 
 ### Content
 -  All English content was written by the developer.

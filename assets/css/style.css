@@ -219,6 +219,17 @@ header {
   background-image: url(../images/horse.png);
 }
 
+/* Button Blocker */
+#btn--start--block {
+  width: 220px;
+  height: 95px;
+  position: absolute;
+  right: 44%;
+  top: 10%;
+  background-color: rgba(225, 235, 182, 0.7);
+  /* visibility: hidden; */
+}
+
 /* Score Section */
 #score {
   font-size: 150%;
@@ -235,6 +246,9 @@ header {
   }
   .btn--big, .btn--skill {
     border: 9px solid #8A2F24;
+  }
+  #btn--start--block {
+    top: 11%;
   }
 }
 
@@ -260,7 +274,10 @@ header {
   }
   .btn--big, .btn--skill {
     border: 8px solid #8A2F24;
-  } 
+  }
+  #btn--start--block {
+    top: 22%;
+  }
 }
 
 /* For screens smaller than 1024px */
@@ -295,6 +312,10 @@ header {
   .btn--reset {
     left: 20%;
   }
+  #btn--start--block {
+    right: 38%;
+    top: 9%;
+  }
 }
 
 /* For screens shorter than 770px */
@@ -302,6 +323,10 @@ header {
   .btn--big, .btn--skill, #vs{
     width: 85px;
     height: 85px;
+  }
+  #btn--start--block {
+    right: 35%;
+    top: 18%;
   }
 }
 
@@ -331,6 +356,7 @@ header {
     border-right: 5px solid #888888;
     position: absolute;
     left: 45%;
+    z-index: 8;
   }
   .btn--start:active {
     font-size: 60%;
@@ -392,6 +418,12 @@ header {
   #score{
     font-size: 90%;
   }
+  #btn--start--block {
+    height: 70px;
+    right: 35%;
+    top: 17%;
+    z-index: 10;
+  }
 }
 
 /* For screens smaller than 540px */
@@ -421,6 +453,11 @@ header {
   .btn--reset {
     left: 10%;
   }
+  #btn--start--block {
+    height: 70px;
+    right: 35%;
+    top: 10%;
+  }
 }
 
 /* For screens smaller than 516px */
@@ -435,6 +472,11 @@ header {
   #player, #opponent {
     height: 80%;
     width: 180%;
+  }
+  #btn--start--block {
+    width: 120px;
+    right: 38%;
+    top: 14%;
   }
 }
 
@@ -504,6 +546,11 @@ header {
   .btn--big, .btn--skill {
     border: 5px solid #8A2F24;
   }
+  #btn--start--block {
+    width: 100px;
+    right: 36%;
+    top: 12%;
+  }
 }
 
 /* For screens shorter than 405px */
@@ -555,5 +602,8 @@ header {
   }
   #score {
     font-size: 100%;
+  }
+  #btn--start--block {
+    top: 11%;
   }
 }
