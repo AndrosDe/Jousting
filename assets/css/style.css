@@ -8,6 +8,10 @@
   font-family: 'Germania One', sans-serif;
 }
 
+html {
+  border: 10px solid #8A2F24;
+}
+
 /* Global Style */
 body {
   background-color: white;
@@ -28,13 +32,13 @@ header, .score-section {
 header {
   display: inline-block;
   width: 100%;
+  padding-bottom: 0.5%;
 }
 
 /* Game Section */
 .game-section {
   background-color: #EBD2B6;
   padding: 0.2% 0;
-  border: 10px solid #8A2F24;
 }
 .game-section h2 {
   font-size: 250%;
