@@ -73,6 +73,17 @@
 
       <h3><img src="assets/images/screenshots/screenshot_heading.png" height="70" width="700"></h3>
 
+  - #### Help-Button
+    - Information about how to play the game, the game rules and how the points are awarded ca be found here.
+
+      <h3><img src="assets/images/screenshots/screenshot_help.png" height="70" width="260"></h3>
+  
+  - #### "Reset Score"-Button
+    - If a player wishes to reset the score back to "0", it can be doen in two ways:
+    1. Refresh the webside.
+    2. Use the "Reset Score"-Button and confirm the pop-up window.
+        <h3><img src="assets/images/screenshots/screenshot_reset.png" height="70" width="260"></h3>
+
   - #### Game Starter
     - The start button is central in the upper section of the page.
     - A message above the start button provides clear instructions.
@@ -124,6 +135,8 @@
     - A Login option to use it in combination with a database to save the game score.
   - #### Database
     - Adding a database to display and compare the score of the diffrent players.
+  - #### Help-Section
+    - A bigger Alert-Box for the "Help" section.
 
 <hr>
 
@@ -175,15 +188,8 @@ The Lighthouse extention was used to validate the performance, accssesability, b
 -  A large amount of testing was done to ensure that all pages were linking correctly.
 
 ### Known Bugs
-- The "Start"-Button can be pressed again while the countdown is running.
-  This will cause the animation and countdown to start again / restart and looks a bit odd.
-  The intended use is to click "Start" once and wait until the countdown runs out.
-  When playing correctly this bug will not appear.
-
-- The "Skill"-Buttons can be clicked after the countdown is at "0" and the results have been displayed.
-  This will not change the results, it will just look odd as the player skill may not match the message.
-  The intended use is to select a skill before the countdown is at "0", selecting a skill after it his "0" is not part of the normal game play.
-
+- The page has to be scrolled on smaller devices.
+  
 <hr>
 
 ## Deployment

@@ -165,11 +165,11 @@ header {
   border: 10px solid #8A2F24;
   background-color: #F2F2F2;
 }
-.btn--big:hover {
+.btn--big:hover, .btn--help:hover, .btn--reset:hover {
   background-color: #DDDDDD;
   transition-duration: 0.8s;
 }
-.btn--big:focus {
+.btn--big:focus, .btn--help:hover, .btn--reset:hover {
   background-color: #CCCCCC;
 }
 .btn--small {
@@ -191,6 +191,8 @@ header {
   top: 1%;
   left: 25%;
 }
+
+
 .btn--shield {
   background-image: url(../images/shield.png);
   background-size: 90%;
