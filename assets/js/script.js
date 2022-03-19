@@ -35,24 +35,29 @@
       } else if (this.getAttribute("data-type") === "instructions") {
         instructions();
 
-        /** The only other button on the webpage is "start".
-         *  Clicking start will first reset the animation, the countdown, the display, and all other changes from the previous round in the game section.
-         */ 
+        // The only other button on the webpage is "start".
       } else {
+        /**
+         * Clicking start will first reset the animation, the countdown, the display, and all other changes from the previous round in the game section.
+         */
         document.getElementById("btn--big--block").style.visibility = "hidden"; // This will remove the div-block from the skill buttons
         document.getElementById("btn--start--block").style.visibility = "visible"; // This will push an div-block in front of the start button
         document.getElementById("countdown").innerHTML = 4; // This resets the coundown back to "4"
         document.getElementById("clash").style = ""; // This removes the "clash.webp" of the previous round from the webpage
         document.getElementById("message").style = ""; // This removes the "message" from the last round
-        // This resets the skill, picture and alt-discription
+        /**
+         * This resets the skill, picture and alt-discription form the previous round
+         */ 
         document.getElementById("player-skill").title = "Null"; 
         document.getElementById("pc-skill").title = "Null";
         document.getElementById("p-skill-image").src = "assets/images/placeholder.png";
         document.getElementById("p-skill-image").alt = "Nothing";
         document.getElementById("o-skill-image").src = "assets/images/placeholder.png";
         document.getElementById("o-skill-image").alt = "Nothing";
-        // Here the other functions are started.
-        countdown();
+        /**
+         *  After reseting all changes from the previous run the other functions are called
+         */ 
+        countdown(); // The most important is the countdown function as it will call up other functions.
         // This calls the animation of the two knights.
         playerMove();
         opponentMove();
@@ -61,7 +66,9 @@
   }
 });
 
-// Countdown - this will start a display of number counting down, which is used to check if a skill was selected before the value was at "0"
+/**
+ *  Countdown - this will start a display of number counting down, which is used to check if a skill was selected before the value was at "0"
+ */
 function countdown() {
   document.getElementById("countdown").style.visibility = "visible";
   let countdown = 3;
@@ -238,7 +245,9 @@ function loseScore() {
   document.getElementById("score").innerText = oldScore + 50;
 }
 
-// Resetting the score back to zero when confiming with "ok".
+/**
+ *  Resetting the score back to zero when confiming with "ok".
+ */
 function resetScore() {
   let r = confirm("Resetting the Score to 0");
   if (r == true) {
@@ -246,7 +255,9 @@ function resetScore() {
   }
 }
 
-//Instructions
+/**
+ * Instructions on how to play the game.
+ */
 function instructions() {
   alert(
     'Welcome to Jousting!\n\nTo start the game please press the "Start-Button".\n\nOnce the "Start-Button" is pressed you have 5 seconds to select on of the 3 Skills below.\nWhen the Countdown hits "0" your last selected Skill,before the timer ran out will be compared to the computer generated timer.\n\nGame Rules:\n-> A shield will block a lance.\n-> An attack with the lance will beat an unshielded opponent.\n-> Nimbleness will help to bypass a shield.\n\nAward Rules:\n-> You will get 1000 points for a win.\n-> A draw will give you 500 points.\n-> Losing a round will give you 50 points.\n-> Not choosing any skill, by not pressing any button before the countdown hits "0" will award no points.\n\nBest of luck to you and have fun!'

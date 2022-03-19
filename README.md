@@ -140,6 +140,13 @@
     - Adding a database to display and compare the score of the diffrent players.
   - #### Help-Section
     - A bigger Alert-Box for the "Help" section.
+  - #### Difficulty Setting
+    - An option to set different difficulties for the game, by making the countdown longer or shorter.
+  - #### Sound
+    - Adding sound effects to the animation, starting the countdown, the outcome (win, lose, draw, or forfeit).
+    - Adding a "Mute Sound" option to disable all sound effects in case the player does not care for the sound.
+  - #### Achievement System
+    - Giving players achievements for reaching a certain number of draws, wins, or losing a tjost. Forfeiting would not grant any achievement.
 <hr>
 
 ## Technologies Used
